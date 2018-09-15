@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+
+  <title>
+    Package: Sorting_Tests (generic)
+  </title>
+  <link rel='stylesheet' href='support/docgen.css' type='text/css'/>
+  <link rel='stylesheet' href='support/tags.css' type='text/css'/>
+  <script src='support/docgen.js' type='text/javascript' charset='utf-8'></script>
+</head>
+<body onload="onloadDoc();">
+
+<div id='leftSide'>
+  <div id='leftSideInside'>
+  <div id='header'>
+    <h2 class="button">Documentation</h2>
+    <a href='toc.html'><div class="button2">Table of Contents</div></a>
+
+    <a href='tree.html'><div class="button2">Class Inheritance Tree</div></a>
+
+  </div>
+
+  <div id='navigation'>
+    <h2 class="button">Navigation</h2>
+    <a href='#Description'><div class="button2">Description</div></a>
+    <a href='#Types'><div class="button2">Types</div></a>
+    <a href='#Methods'><div class="button2">Subprograms &amp; Entries</div></a>
+  </div><!-- navigation -->
+  </div>
+</div> <!-- leftSide -->
+
+<div class='default' id='rightSide'>
+ <div id='rightSideInside'>
+ <div id='Index'>
+  <h2>Index</h2>
+  <script type="text/javascript">
+    var names = new Array (
+new Array ('Element', 'sorting_tests.ads:3:9', 'type-spec'),
+new Array ('Index', 'sorting_tests.ads:4:9', 'type-spec'),
+new Array ('Element_<wbr/>Array', 'sorting_tests.ads:5:9', 'type-spec'),
+new Array ('Is_<wbr/>Sorted', 'sorting_tests.ads:12:13', 'subp-spec'),
+new Array ('Is_<wbr/>Permutation', 'sorting_tests.ads:14:13', 'subp-spec'),
+      new Array ('dummy', '', ''));
+    printIndexList (names);
+  </script>
+  <noscript>
+    <ul>
+      <li class='type-spec'><a href="#sorting_tests.ads:3:9">Element</a></li>
+      <li class='type-spec'><a href="#sorting_tests.ads:4:9">Index</a></li>
+      <li class='type-spec'><a href="#sorting_tests.ads:5:9">Element_<wbr/>Array</a></li>
+      <li class='subp-spec'><a href="#sorting_tests.ads:12:13">Is_<wbr/>Sorted</a></li>
+      <li class='subp-spec'><a href="#sorting_tests.ads:14:13">Is_<wbr/>Permutation</a></li>
+    </ul>
+  </noscript>
+ </div>
+ </div>
+</div>
+
+<div class='default' id='documentation'>
+  <div class='title'>
+    Package:
+<span class="droplink"><i>Sorting_Tests (generic)</i><ul>
+  <li><a href="src_sorting_tests.ads.html">Goto spec source</a></li>
+  <li><a href="src_sorting_tests.adb.html">Goto body source</a></li>
+</ul></span>
+  </div>
+  <div class='subprograms'>
+    <h1><a name='Description' id='Description'></a>Description</h1>
+    <div class="class">
+    <div class='details'><pre><span class="keyword">generic</span>
+
+   <span class="keyword">type</span> <span class="name"><a name="sorting_tests.ads:3:9"></a>Element</span>       <span class="keyword">is</span> <span class="keyword">private</span>;
+   <span class="keyword">type</span> <span class="name"><a name="sorting_tests.ads:4:9"></a>Index</span>         <span class="keyword">is</span> (<>);
+   <span class="keyword">type</span> <span class="name"><a name="sorting_tests.ads:5:9"></a>Element_Array</span> <span class="keyword">is</span> <span class="keyword">array</span> (<a href="sorting_tests.ads.html#sorting_tests.ads:4:9" title="defined at sorting_tests.ads:4:9">Index</a> <span class="keyword">range</span> <>) <span class="keyword">of</span> <a href="sorting_tests.ads.html#sorting_tests.ads:3:9" title="defined at sorting_tests.ads:3:9">Element</a>;
+
+   <span class="keyword">with</span> <span class="keyword">function</span> <a href="sorting_tests.ads.html#sorting_tests.ads:7:19" title="defined at sorting_tests.ads:7:19">"<"</a>  (Left, Right : <a href="sorting_tests.ads.html#sorting_tests.ads:3:9" title="defined at sorting_tests.ads:3:9">Element</a>) <span class="keyword">return</span> Boolean <span class="keyword">is</span> <>;
+   <span class="keyword">with</span> <span class="keyword">function</span> <a href="sorting_tests.ads.html#sorting_tests.ads:8:19" title="defined at sorting_tests.ads:8:19">"="</a>  (Left, Right : <a href="sorting_tests.ads.html#sorting_tests.ads:3:9" title="defined at sorting_tests.ads:3:9">Element</a>) <span class="keyword">return</span> Boolean <span class="keyword">is</span> <>;
+
+<span class="keyword">package</span> <span class="name_emphasis">Sorting_Tests</span> <span class="keyword">is</span></pre></div>
+    </div>
+  </div>
+
+
+
+
+  <div class='subprograms'>
+    <h1><a name='Types' id='Types'></a>Types</h1>
+    <div class="class">
+      <h3>
+        <a name='sorting_tests.ads:3:9' id='sorting_tests.ads:3:9'></a>
+<span class="droplink">Element<ul>
+  <li><a href="src_sorting_tests.ads.html#l3">Goto declaration in source</a></li>
+</ul></span>
+      </h3>
+      <div class='details'><pre><span class="keyword">type</span> <span class="name_emphasis">Element</span>       <span class="keyword">is</span> <span class="keyword">private</span>;</pre></div>
+      <div class='profile'>
+          <h4>References:</h4>
+          <div><i><a href="src_sorting_tests.ads.html#l3" title="sorting_tests.ads:3:9">sorting_tests.ads:3:9</a> (declaration)</i></div>
+          <div><i><a href="src_sorting_tests.adb.html#l26" title="sorting_tests.adb:26:55">sorting_tests.adb:26:55</a> (reference)</i></div>
+          <div><i><a href="src_sorting_tests.ads.html#l5" title="sorting_tests.ads:5:52">sorting_tests.ads:5:52</a> (reference)</i></div>
+          <div><i><a href="src_sorting_tests.ads.html#l7" title="sorting_tests.ads:7:38">sorting_tests.ads:7:38</a> (reference)</i></div>
+          <div><i><a href="src_sorting_tests.ads.html#l8" title="sorting_tests.ads:8:38">sorting_tests.ads:8:38</a> (reference)</i></div>
+          <div><i><a href="src_test_concurrent_mergesort.adb.html#l23" title="test_concurrent_mergesort.adb:23:56">test_concurrent_mergesort.adb:23:56</a> (reference)</i></div>
+      </div>
+    </div>
+    <div class="class">
+      <h3>
+        <a name='sorting_tests.ads:4:9' id='sorting_tests.ads:4:9'></a>
+<span class="droplink">Index<ul>
+  <li><a href="src_sorting_tests.ads.html#l4">Goto declaration in source</a></li>
+</ul></span>
+      </h3>
+      <div class='details'><pre><span class="keyword">type</span> <span class="name_emphasis">Index</span>         <span class="keyword">is</span> (<>);</pre></div>
+      <div class='profile'>
+          <h4>References:</h4>
+          <div><i><a href="src_sorting_tests.ads.html#l4" title="sorting_tests.ads:4:9">sorting_tests.ads:4:9</a> (declaration)</i></div>
+          <div><i><a href="src_sorting_tests.adb.html#l12" title="sorting_tests.adb:12:32">sorting_tests.adb:12:32</a> (reference)</i></div>
+          <div><i><a href="src_sorting_tests.adb.html#l13" title="sorting_tests.adb:13:20">sorting_tests.adb:13:20</a> (reference)</i></div>
+          <div><i><a href="src_sorting_tests.ads.html#l5" title="sorting_tests.ads:5:33">sorting_tests.ads:5:33</a> (reference)</i></div>
+          <div><i><a href="src_test_concurrent_mergesort.adb.html#l24" title="test_concurrent_mergesort.adb:24:56">test_concurrent_mergesort.adb:24:56</a> (reference)</i></div>
+      </div>
+    </div>
+    <div class="class">
+      <h3>
+        <a name='sorting_tests.ads:5:9' id='sorting_tests.ads:5:9'></a>
+<span class="droplink">Element_Array<ul>
+  <li><a href="src_sorting_tests.ads.html#l5">Goto declaration in source</a></li>
+</ul></span>
+      </h3>
+      <div class='details'><pre><span class="keyword">type</span> <span class="name_emphasis">Element_Array</span> <span class="keyword">is</span> <span class="keyword">array</span> (<a href="sorting_tests.ads.html#sorting_tests.ads:4:9" title="defined at sorting_tests.ads:4:9">Index</a> <span class="keyword">range</span> <>) <span class="keyword">of</span> <a href="sorting_tests.ads.html#sorting_tests.ads:3:9" title="defined at sorting_tests.ads:3:9">Element</a>;</pre></div>
+      <div class='profile'>
+          <h4>References:</h4>
+          <div><i><a href="src_sorting_tests.ads.html#l5" title="sorting_tests.ads:5:9">sorting_tests.ads:5:9</a> (declaration)</i></div>
+          <div><i><a href="src_sorting_tests.adb.html#l9" title="sorting_tests.adb:9:32">sorting_tests.adb:9:32</a> (reference)</i></div>
+          <div><i><a href="src_sorting_tests.adb.html#l24" title="sorting_tests.adb:24:48">sorting_tests.adb:24:48</a> (reference)</i></div>
+          <div><i><a href="src_sorting_tests.ads.html#l12" title="sorting_tests.ads:12:32">sorting_tests.ads:12:32</a> (reference)</i></div>
+          <div><i><a href="src_sorting_tests.ads.html#l14" title="sorting_tests.ads:14:48">sorting_tests.ads:14:48</a> (reference)</i></div>
+          <div><i><a href="src_test_concurrent_mergesort.adb.html#l25" title="test_concurrent_mergesort.adb:25:56">test_concurrent_mergesort.adb:25:56</a> (reference)</i></div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class='subprograms'>
+      <h1><a name='Methods' id='Methods'></a>Subprograms &amp; Entries</h1>
+      <div class="class">
+        <h3>
+          <a name='sorting_tests.ads:12:13' id='sorting_tests.ads:12:13'></a>
+<span class="droplink">Is_Sorted<ul>
+  <li><a href="src_sorting_tests.ads.html#l12">Goto spec in source</a></li>
+  <li><a href="src_sorting_tests.adb.html#l9">Goto body in source</a></li>
+</ul></span>
+        </h3>
+        <div class='details'><pre><span class="keyword">function</span> <span class="name_emphasis">Is_Sorted</span> <table><tr><td>(</td><td><span class="name"><a name="sorting_tests.ads:12:24"></a>Field</span></td><td>: <a href="sorting_tests.ads.html#sorting_tests.ads:5:9" title="defined at sorting_tests.ads:5:9">Element_Array</a>) <span class="keyword">return</span> Boolean;</td></tr></table></pre></div>
+        <div class='profile'>
+          <h4>References:</h4>
+            <div><i><a href="src_sorting_tests.ads.html#l12" title="sorting_tests.ads:12:13">sorting_tests.ads:12:13</a> (declaration)</i></div>
+            <div><i><a href="src_sorting_tests.adb.html#l9" title="sorting_tests.adb:9:13">sorting_tests.adb:9:13</a> (body)</i></div>
+            <div><i><a href="src_sorting_tests.adb.html#l18" title="sorting_tests.adb:18:8">sorting_tests.adb:18:8</a> (label)</i></div>
+            <div><i><a href="src_test_concurrent_mergesort.adb.html#l33" title="test_concurrent_mergesort.adb:33:21">test_concurrent_mergesort.adb:33:21</a> (call)</i></div>
+            <div><i><a href="src_test_concurrent_mergesort.adb.html#l80" title="test_concurrent_mergesort.adb:80:14">test_concurrent_mergesort.adb:80:14</a> (call)</i></div>
+        </div>
+        <div class='profile'>
+          <h4>Called by:</h4>
+            <div><i><a href="test_concurrent_mergesort.adb.html#test_concurrent_mergesort.adb:8:11" title="defined at test_concurrent_mergesort.adb:8:11">Test_Concurrent_Mergesort</a> defined at <a href="src_test_concurrent_mergesort.adb.html#l8" title="test_concurrent_mergesort.adb:8:11">test_concurrent_mergesort.adb:8:11</a></i></div>
+            <div><i><a href="test_concurrent_mergesort.adb.html#test_concurrent_mergesort.adb:28:14" title="defined at test_concurrent_mergesort.adb:28:14">Test_Concurrent_Mergesort.Check_Field</a> defined at <a href="src_test_concurrent_mergesort.adb.html#l28" title="test_concurrent_mergesort.adb:28:14">test_concurrent_mergesort.adb:28:14</a></i></div>
+        </div>
+        <div class='profile'>
+          <h4>Calls:</h4>
+            <div><i><a href="sorting_tests.ads.html#sorting_tests.ads:7:19" title="defined at sorting_tests.ads:7:19"><</a> defined at <a href="src_sorting_tests.ads.html#l7" title="sorting_tests.ads:7:19">sorting_tests.ads:7:19</a></i></div>
+        </div>
+      </div>
+      <div class="class">
+        <h3>
+          <a name='sorting_tests.ads:14:13' id='sorting_tests.ads:14:13'></a>
+<span class="droplink">Is_Permutation<ul>
+  <li><a href="src_sorting_tests.ads.html#l14">Goto spec in source</a></li>
+  <li><a href="src_sorting_tests.adb.html#l24">Goto body in source</a></li>
+</ul></span>
+        </h3>
+        <div class='details'><pre><span class="keyword">function</span> <span class="name_emphasis">Is_Permutation</span> <table><tr><td>(</td><td><span class="name"><a name="sorting_tests.ads:14:29"></a>Field_A</span>, <span class="name"><a name="sorting_tests.ads:14:38"></a>Field_B</span></td><td>: <a href="sorting_tests.ads.html#sorting_tests.ads:5:9" title="defined at sorting_tests.ads:5:9">Element_Array</a>) <span class="keyword">return</span> Boolean;</td></tr></table></pre></div>
+        <div class='profile'>
+          <h4>References:</h4>
+            <div><i><a href="src_sorting_tests.ads.html#l14" title="sorting_tests.ads:14:13">sorting_tests.ads:14:13</a> (declaration)</i></div>
+            <div><i><a href="src_sorting_tests.adb.html#l24" title="sorting_tests.adb:24:13">sorting_tests.adb:24:13</a> (body)</i></div>
+            <div><i><a href="src_sorting_tests.adb.html#l44" title="sorting_tests.adb:44:8">sorting_tests.adb:44:8</a> (label)</i></div>
+            <div><i><a href="src_test_concurrent_mergesort.adb.html#l38" title="test_concurrent_mergesort.adb:38:26">test_concurrent_mergesort.adb:38:26</a> (call)</i></div>
+            <div><i><a href="src_test_concurrent_mergesort.adb.html#l80" title="test_concurrent_mergesort.adb:80:49">test_concurrent_mergesort.adb:80:49</a> (call)</i></div>
+        </div>
+        <div class='profile'>
+          <h4>Called by:</h4>
+            <div><i><a href="test_concurrent_mergesort.adb.html#test_concurrent_mergesort.adb:8:11" title="defined at test_concurrent_mergesort.adb:8:11">Test_Concurrent_Mergesort</a> defined at <a href="src_test_concurrent_mergesort.adb.html#l8" title="test_concurrent_mergesort.adb:8:11">test_concurrent_mergesort.adb:8:11</a></i></div>
+            <div><i><a href="test_concurrent_mergesort.adb.html#test_concurrent_mergesort.adb:28:14" title="defined at test_concurrent_mergesort.adb:28:14">Test_Concurrent_Mergesort.Check_Field</a> defined at <a href="src_test_concurrent_mergesort.adb.html#l28" title="test_concurrent_mergesort.adb:28:14">test_concurrent_mergesort.adb:28:14</a></i></div>
+        </div>
+        <div class='profile'>
+          <h4>Calls:</h4>
+            <div><i>= defined at a-convec.ads:75:25</i></div>
+            <div><i>Append defined at a-convec.ads:243:14</i></div>
+            <div><i>Sort defined at a-convec.ads:347:17</i></div>
+        </div>
+      </div>
+    </div>
+</div> <!-- documentation -->
+
+</body>
+</html>

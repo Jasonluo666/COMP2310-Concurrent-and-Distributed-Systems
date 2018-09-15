@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+
+  <title>
+    File: sorting_tests.adb
+  </title>
+  <link rel='stylesheet' href='support/docgen.css' type='text/css'/>
+  <link rel='stylesheet' href='support/tags.css' type='text/css'/>
+  <script src='support/docgen.js' type='text/javascript' charset='utf-8'></script>
+</head>
+<body onload="onloadDoc();">
+
+<div id='leftSide'>
+  <div id='leftSideInside'>
+  <div id='header'>
+    <h2 class="button">Documentation</h2>
+    <a href='toc.html'><div class="button2">Table of Contents</div></a>
+
+    <a href='tree.html'><div class="button2">Class Inheritance Tree</div></a>
+
+  </div>
+  </div>
+</div> <!-- leftSide -->
+
+<div class='subprograms'>
+  <div class='details'><ol><li id="l1"><pre><span class="keyword">with</span> Ada.Containers.Vectors; <span class="keyword">use</span> Ada.Containers; </pre></li>
+<li id="l2"><pre> </pre></li>
+<li id="l3"><pre><span class="keyword">package</span> <span class="keyword">body</span> <span class="droplink">Sorting_Tests<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:10:9" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l10" title="To spec">To spec</a></li></ul></span> <span class="keyword">is</span> </pre></li>
+<li id="l4"><pre> </pre></li>
+<li id="l5"><pre>   <span class="comment">---------------</span> </pre></li>
+<li id="l6"><pre>   <span class="comment">-- Is_Sorted --</span> </pre></li>
+<li id="l7"><pre>   <span class="comment">---------------</span> </pre></li>
+<li id="l8"><pre> </pre></li>
+<li id="l9"><pre>   <span class="keyword">function</span> <span class="droplink">Is_Sorted<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:12:13" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l12" title="To spec">To spec</a></li></ul></span> (<span class="droplink">Field<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:12:24" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l12" title="To spec">To spec</a></li></ul></span> : <span class="droplink">Element_Array<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:5:9" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l5" title="To spec">To spec</a></li></ul></span>) <span class="keyword">return</span> Boolean <span class="keyword">is</span> </pre></li>
+<li id="l10"><pre> </pre></li>
+<li id="l11"><pre>   <span class="keyword">begin</span> </pre></li>
+<li id="l12"><pre>      <span class="keyword">for</span> ix <span class="keyword">in</span> <span class="droplink">Field<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:12:24" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l12" title="To spec">To spec</a></li></ul></span>&apos;First .. <span class="droplink">Index<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l4" title="To spec">To spec</a></li></ul></span>&apos;Pred (<span class="droplink">Field<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:12:24" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l12" title="To spec">To spec</a></li></ul></span>&apos;Last) <span class="keyword">loop</span> </pre></li>
+<li id="l13"><pre>         <span class="keyword">if</span> <span class="droplink">Field<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:12:24" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l12" title="To spec">To spec</a></li></ul></span> (<span class="droplink">Index<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l4" title="To spec">To spec</a></li></ul></span>&apos;Succ (ix)) &lt; <span class="droplink">Field<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:12:24" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l12" title="To spec">To spec</a></li></ul></span> (ix) <span class="keyword">then</span> </pre></li>
+<li id="l14"><pre>            <span class="keyword">return</span> False; </pre></li>
+<li id="l15"><pre>         <span class="keyword">end</span> <span class="keyword">if</span>; </pre></li>
+<li id="l16"><pre>      <span class="keyword">end</span> <span class="keyword">loop</span>; </pre></li>
+<li id="l17"><pre>      <span class="keyword">return</span> True; </pre></li>
+<li id="l18"><pre>   <span class="keyword">end</span> <span class="droplink">Is_Sorted<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:12:13" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l12" title="To spec">To spec</a></li><li><a href="src_sorting_tests.adb.html#l9" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l19"><pre> </pre></li>
+<li id="l20"><pre>   <span class="comment">--------------------</span> </pre></li>
+<li id="l21"><pre>   <span class="comment">-- Is_Permutation --</span> </pre></li>
+<li id="l22"><pre>   <span class="comment">--------------------</span> </pre></li>
+<li id="l23"><pre> </pre></li>
+<li id="l24"><pre>   <span class="keyword">function</span> <span class="droplink">Is_Permutation<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:14:13" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l14" title="To spec">To spec</a></li></ul></span> (<span class="droplink">Field_A<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:14:29" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l14" title="To spec">To spec</a></li></ul></span>, <span class="droplink">Field_B<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:14:38" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l14" title="To spec">To spec</a></li></ul></span> : <span class="droplink">Element_Array<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:5:9" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l5" title="To spec">To spec</a></li></ul></span>) <span class="keyword">return</span> Boolean <span class="keyword">is</span> </pre></li>
+<li id="l25"><pre> </pre></li>
+<li id="l26"><pre>      <span class="keyword">package</span> Field_Vectors <span class="keyword">is</span> <span class="keyword">new</span> Vectors (Positive, <span class="droplink">Element<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:3:9" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l3" title="To spec">To spec</a></li></ul></span>); </pre></li>
+<li id="l27"><pre>      <span class="keyword">use</span> <a href="src_sorting_tests.adb.html#l26" title="defined at sorting_tests.adb:26:15">Field_Vectors</a>; </pre></li>
+<li id="l28"><pre> </pre></li>
+<li id="l29"><pre>      <span class="keyword">package</span> Field_Vectors_Sorting <span class="keyword">is</span> <span class="keyword">new</span> Generic_Sorting; </pre></li>
+<li id="l30"><pre>      <span class="keyword">use</span> <a href="src_sorting_tests.adb.html#l29" title="defined at sorting_tests.adb:29:15">Field_Vectors_Sorting</a>; </pre></li>
+<li id="l31"><pre> </pre></li>
+<li id="l32"><pre>      Vector_A, Vector_B : Vector := Empty_Vector; </pre></li>
+<li id="l33"><pre> </pre></li>
+<li id="l34"><pre>   <span class="keyword">begin</span> </pre></li>
+<li id="l35"><pre>      <span class="keyword">for</span> i <span class="keyword">in</span> <span class="droplink">Field_A<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:14:29" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l14" title="To spec">To spec</a></li></ul></span>&apos;Range <span class="keyword">loop</span> </pre></li>
+<li id="l36"><pre>         Append (<a href="src_sorting_tests.adb.html#l32" title="defined at sorting_tests.adb:32:7">Vector_A</a>, <span class="droplink">Field_A<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:14:29" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l14" title="To spec">To spec</a></li></ul></span> (i)); </pre></li>
+<li id="l37"><pre>      <span class="keyword">end</span> <span class="keyword">loop</span>; </pre></li>
+<li id="l38"><pre>      <span class="keyword">for</span> i <span class="keyword">in</span> <span class="droplink">Field_B<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:14:38" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l14" title="To spec">To spec</a></li></ul></span>&apos;Range <span class="keyword">loop</span> </pre></li>
+<li id="l39"><pre>         Append (<a href="src_sorting_tests.adb.html#l32" title="defined at sorting_tests.adb:32:17">Vector_B</a>, <span class="droplink">Field_B<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:14:38" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l14" title="To spec">To spec</a></li></ul></span> (i)); </pre></li>
+<li id="l40"><pre>      <span class="keyword">end</span> <span class="keyword">loop</span>; </pre></li>
+<li id="l41"><pre>      Sort (<a href="src_sorting_tests.adb.html#l32" title="defined at sorting_tests.adb:32:7">Vector_A</a>); </pre></li>
+<li id="l42"><pre>      Sort (<a href="src_sorting_tests.adb.html#l32" title="defined at sorting_tests.adb:32:17">Vector_B</a>); </pre></li>
+<li id="l43"><pre>      <span class="keyword">return</span> <a href="src_sorting_tests.adb.html#l32" title="defined at sorting_tests.adb:32:7">Vector_A</a> = <a href="src_sorting_tests.adb.html#l32" title="defined at sorting_tests.adb:32:17">Vector_B</a>; </pre></li>
+<li id="l44"><pre>   <span class="keyword">end</span> <span class="droplink">Is_Permutation<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:14:13" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l14" title="To spec">To spec</a></li><li><a href="src_sorting_tests.adb.html#l24" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l45"><pre> </pre></li>
+<li id="l46"><pre><span class="keyword">end</span> <span class="droplink">Sorting_Tests<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:10:9" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l10" title="To spec">To spec</a></li><li><a href="src_sorting_tests.adb.html#l3" title="To body">To body</a></li></ul></span>; </pre></li>
+</ol></div>
+</div>
+
+</body>
+</html>

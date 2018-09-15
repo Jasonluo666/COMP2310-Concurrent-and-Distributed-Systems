@@ -1,0 +1,24 @@
+[GENERATED OBJECT FILE]
+b__philos.o
+[PROJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Semaphore\semaphore.gpr
+20150809013930
+[BOUND OBJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Semaphore\Objects\id_dispenser.o
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Semaphore\Objects\semaphores.o
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Semaphore\Objects\philos.o
+[GENERATED SOURCE FILES]
+b__philos.ads
+b__philos.adb
+b__philos.ali
+[RESULTING OPTIONS]
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Semaphore\Objects\
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Semaphore\Objects\
+-LE:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnarl.a
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 3" line=" 16" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Stack_Sequential\stack_sequential.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Stack_Sequential\Sources\stack_test_generic</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Stack_Sequential\stack_sequential.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Stack_Sequential\Sources\stack_pack_generic.ads</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

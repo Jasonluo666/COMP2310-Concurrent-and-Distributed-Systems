@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__two_tasks.o
+[PROJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Two_Tasks\two_tasks.gpr
+20170808015356
+[BOUND OBJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Two_Tasks\Objects\two_tasks.o
+[GENERATED SOURCE FILES]
+b__two_tasks.ads
+b__two_tasks.adb
+b__two_tasks.ali
+[RESULTING OPTIONS]
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Two_Tasks\Objects\
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Two_Tasks\Objects\
+-LE:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnarl.a
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__token_ring.o
+[PROJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Token_Ring\token_ring.gpr
+20150807062718
+[BOUND OBJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Token_Ring\Objects\token_ring.o
+[GENERATED SOURCE FILES]
+b__token_ring.ads
+b__token_ring.adb
+b__token_ring.ali
+[RESULTING OPTIONS]
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Token_Ring\Objects\
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Token_Ring\Objects\
+-LE:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnarl.a
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

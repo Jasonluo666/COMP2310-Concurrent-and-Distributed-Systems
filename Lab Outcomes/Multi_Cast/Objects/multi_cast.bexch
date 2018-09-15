@@ -1,0 +1,24 @@
+[GENERATED OBJECT FILE]
+b__multi_cast.o
+[PROJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Multi_Cast\multi_cast.gpr
+20150809010644
+[BOUND OBJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Multi_Cast\Objects\id_dispenser.o
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Multi_Cast\Objects\message_server.o
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Multi_Cast\Objects\multi_cast.o
+[GENERATED SOURCE FILES]
+b__multi_cast.ads
+b__multi_cast.adb
+b__multi_cast.ali
+[RESULTING OPTIONS]
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Multi_Cast\Objects\
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Multi_Cast\Objects\
+-LE:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnarl.a
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

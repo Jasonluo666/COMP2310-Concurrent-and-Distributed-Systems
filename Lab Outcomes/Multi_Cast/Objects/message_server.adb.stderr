@@ -1,0 +1,1 @@
+message_server.adb:35:12: warning: potentially blocking operation in protected operation

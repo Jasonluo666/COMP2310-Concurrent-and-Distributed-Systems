@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+
+  <title>
+    File: counter_test.adb
+  </title>
+  <link rel='stylesheet' href='support/docgen.css' type='text/css'/>
+  <link rel='stylesheet' href='support/tags.css' type='text/css'/>
+  <script src='support/docgen.js' type='text/javascript' charset='utf-8'></script>
+</head>
+<body onload="onloadDoc();">
+
+<div id='leftSide'>
+  <div id='leftSideInside'>
+  <div id='header'>
+    <h2 class="button">Documentation</h2>
+    <a href='toc.html'><div class="button2">Table of Contents</div></a>
+
+    <a href='tree.html'><div class="button2">Class Inheritance Tree</div></a>
+
+  </div>
+  </div>
+</div> <!-- leftSide -->
+
+<div class='subprograms'>
+  <div class='details'><ol><li id="l1"><pre><span class="keyword">with</span> Ada.Text_IO; <span class="keyword">use</span> Ada.Text_IO; </pre></li>
+<li id="l2"><pre> </pre></li>
+<li id="l3"><pre><span class="keyword">procedure</span> Counter_Test <span class="keyword">is</span> </pre></li>
+<li id="l4"><pre> </pre></li>
+<li id="l5"><pre>   Sum : Natural := 50; </pre></li>
+<li id="l6"><pre> </pre></li>
+<li id="l7"><pre>   <span class="keyword">task</span> <span class="keyword">type</span> <a href="src_counter_test.adb.html#l9" title="defined at counter_test.adb:7:14">Counter</a> (Id : Positive; Goal : Natural); </pre></li>
+<li id="l8"><pre> </pre></li>
+<li id="l9"><pre>   <span class="keyword">task</span> <span class="keyword">body</span> <a href="src_counter_test.adb.html#l7" title="defined at counter_test.adb:7:14">Counter</a> <span class="keyword">is</span> </pre></li>
+<li id="l10"><pre> </pre></li>
+<li id="l11"><pre>   <span class="keyword">begin</span> </pre></li>
+<li id="l12"><pre>      <span class="keyword">while</span> <a href="src_counter_test.adb.html#l5" title="defined at counter_test.adb:5:4">Sum</a> /= <a href="src_counter_test.adb.html#l7" title="defined at counter_test.adb:7:38">Goal</a> <span class="keyword">loop</span> </pre></li>
+<li id="l13"><pre>         <a href="src_counter_test.adb.html#l5" title="defined at counter_test.adb:5:4">Sum</a> := (<span class="keyword">if</span> <a href="src_counter_test.adb.html#l5" title="defined at counter_test.adb:5:4">Sum</a> &gt; <a href="src_counter_test.adb.html#l7" title="defined at counter_test.adb:7:38">Goal</a> <span class="keyword">then</span> <a href="src_counter_test.adb.html#l5" title="defined at counter_test.adb:5:4">Sum</a> - 1 <span class="keyword">else</span> <a href="src_counter_test.adb.html#l5" title="defined at counter_test.adb:5:4">Sum</a> + 1); </pre></li>
+<li id="l14"><pre>         Put (Natural&apos;Image (<a href="src_counter_test.adb.html#l5" title="defined at counter_test.adb:5:4">Sum</a>)); </pre></li>
+<li id="l15"><pre>         <span class="keyword">delay</span> 0.0; <span class="comment">-- try leaving out this delay statement!</span> </pre></li>
+<li id="l16"><pre>      <span class="keyword">end</span> <span class="keyword">loop</span>; </pre></li>
+<li id="l17"><pre> </pre></li>
+<li id="l18"><pre>      New_Line; </pre></li>
+<li id="l19"><pre>      Put_Line (<span class="string">&quot;Counter task&quot;</span> &amp; Positive&apos;Image (<a href="src_counter_test.adb.html#l7" title="defined at counter_test.adb:7:23">Id</a>) &amp; <span class="string">&quot; terminates with sum being:&quot;</span> &amp; Natural&apos;Image (<a href="src_counter_test.adb.html#l5" title="defined at counter_test.adb:5:4">Sum</a>)); </pre></li>
+<li id="l20"><pre>   <span class="keyword">end</span> <span class="droplink">Counter<ul><li><a href="src_counter_test.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_counter_test.adb.html#l9" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l21"><pre> </pre></li>
+<li id="l22"><pre>   Counter_1 : <span class="droplink">Counter<ul><li><a href="src_counter_test.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_counter_test.adb.html#l9" title="To body">To body</a></li></ul></span> (1, 30); </pre></li>
+<li id="l23"><pre>   Counter_2 : <span class="droplink">Counter<ul><li><a href="src_counter_test.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_counter_test.adb.html#l9" title="To body">To body</a></li></ul></span> (2, 40); </pre></li>
+<li id="l24"><pre>   Counter_3 : <span class="droplink">Counter<ul><li><a href="src_counter_test.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_counter_test.adb.html#l9" title="To body">To body</a></li></ul></span> (3, 60); </pre></li>
+<li id="l25"><pre>   Counter_4 : <span class="droplink">Counter<ul><li><a href="src_counter_test.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_counter_test.adb.html#l9" title="To body">To body</a></li></ul></span> (4, 70); </pre></li>
+<li id="l26"><pre> </pre></li>
+<li id="l27"><pre><span class="keyword">begin</span> </pre></li>
+<li id="l28"><pre>   New_Line; </pre></li>
+<li id="l29"><pre>   Put_Line (<span class="string">&quot;Counter_Test terminates with sum being:&quot;</span> &amp; Natural&apos;Image (<a href="src_counter_test.adb.html#l5" title="defined at counter_test.adb:5:4">Sum</a>)); </pre></li>
+<li id="l30"><pre><span class="keyword">end</span> <span class="droplink">Counter_Test<ul><li><a href="src_counter_test.adb.html#l3" title="To spec">To spec</a></li><li><a href="src_counter_test.adb.html#l3" title="To body">To body</a></li></ul></span>; </pre></li>
+</ol></div>
+</div>
+
+</body>
+</html>

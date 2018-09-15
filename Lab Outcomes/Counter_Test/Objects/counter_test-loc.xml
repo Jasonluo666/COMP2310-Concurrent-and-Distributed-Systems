@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\counter_test.gpr</vfs_file>
+    <file_marker column=" 4" line=" 74" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\counter_test.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\Sources\counter_test_synchronized.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 69" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\counter_test.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\Sources\counter_test_synchronized.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\counter_test.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\Sources\counter_test.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 72" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\counter_test.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\Sources\counter_test_synchronized.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\counter_test.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\Sources\counter_test.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

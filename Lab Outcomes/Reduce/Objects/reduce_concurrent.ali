@@ -1,0 +1,121 @@
+V "GNAT Lib v2017"
+A -gnatA
+A -g
+A -gnatVa
+A -gnatVr
+A -gnatVp
+A -gnatVm
+A -gnatVi
+A -gnatVf
+A -gnatVe
+A -gnatVd
+A -gnatVc
+A -gnatVO
+A -gnatw.a
+A -gnatw.b
+A -gnatwc
+A -gnatw.c
+A -gnatwd
+A -gnatwf
+A -gnatwg
+A -gnatwh
+A -gnatw.h
+A -gnatwi
+A -gnatw.i
+A -gnatwj
+A -gnatwk
+A -gnatw.k
+A -gnatwl
+A -gnatw.l
+A -gnatwm
+A -gnatw.m
+A -gnatw.n
+A -gnatwo
+A -gnatw.o
+A -gnatwp
+A -gnatw.p
+A -gnatwq
+A -gnatwr
+A -gnatw.r
+A -gnatw.s
+A -gnatwt
+A -gnatw.t
+A -gnatwu
+A -gnatw.u
+A -gnatwv
+A -gnatw.v
+A -gnatww
+A -gnatw.w
+A -gnatwx
+A -gnatw.x
+A -gnatwy
+A -gnatwz
+A -gnat12
+A -gnatya
+A -gnatyA
+A -gnatyb
+A -gnatyB
+A -gnatyc
+A -gnatyC
+A -gnatye
+A -gnatyh
+A -gnatyf
+A -gnatyi
+A -gnatyk
+A -gnatyl
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnato
+A -fstack-check=specific
+A -gnatE
+A -gnata
+A -g
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_RECURSION
+RV NO_TASKING
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+RV MAX_TASK_ENTRIES=1
+
+U reduce_concurrent%b	reduce_concurrent.adb	1b7ca0ce DE NE OO SU GE
+
+U reduce_concurrent%s	reduce_concurrent.ads	4a6f53cb BN DE EE NE OO GE
+
+D reduce_concurrent.ads	20170831062244 4a6f53cb reduce_concurrent%s
+D reduce_concurrent.adb	20170831092758 5113f305 reduce_concurrent%b
+D system.ads		20170516105954 32a08138 system%s
+X 1 reduce_concurrent.ads
+3+9 Element 5r52 7r41 7r57 9r55 2|1r55 4r34 8r25 10r35 16r14 17r14
+4E9 Index 5r33 2|3r49 15r23 15r32 15r43 26r58
+5A9 Element_Array(3+9)<4E9> 9r33 2|1r33
+7V18 Combine{3+9} 7>27 7>33 2|23s14 31s17
+7*27 Left{3+9}
+7*33 Right{3+9}
+9v10*Reduce_Concurrent 9>29 2|1b10 8s36 36l5 36t22
+9*29 A{5A9} 2|1b29 8r55 15r54 15r65 20r7 21r14 21r17 22r10 23r23 23r26 23r36
+. 23r39 26r49 27r57
+X 2 reduce_concurrent.adb
+3T14 Combiner 3d24 3d37 5l8 5e16 7b14 13l8 13t16 26r39 27r39
+3*24 Slice_Begin{1|4E9} 8r58
+3*37 Slice_End{1|4E9} 8r73
+4Y13 Combination 4<26 10b14 12l11 12t22 29s36 30s37
+4*26 E{1|3+9} 11m10
+8*7 Result{1|3+9} 11r15
+10*27 E{1|3+9}
+15*4 Middle{1|4E9} 26r70 27r49
+16*4 Result1{1|3+9} 29m49 31r26
+17*4 Result2{1|3+9} 30m50 31r35
+26t10 Concurrent_Combiner_first{3T14} 29r10
+27t10 Concurrent_Combiner_second{3T14} 30r10
+

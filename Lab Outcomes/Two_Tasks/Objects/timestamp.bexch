@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__timestamp.o
+[PROJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Two_Tasks\two_tasks.gpr
+20170808015652
+[BOUND OBJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Two_Tasks\Objects\timestamp.o
+[GENERATED SOURCE FILES]
+b__timestamp.ads
+b__timestamp.adb
+b__timestamp.ali
+[RESULTING OPTIONS]
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Two_Tasks\Objects\
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Two_Tasks\Objects\
+-LE:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

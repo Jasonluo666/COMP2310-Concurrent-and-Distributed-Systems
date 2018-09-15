@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__synchronized_action.o
+[PROJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Synchronized_Action\synchronized_action.gpr
+20150809005934
+[BOUND OBJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Synchronized_Action\Objects\synchronized_action.o
+[GENERATED SOURCE FILES]
+b__synchronized_action.ads
+b__synchronized_action.adb
+b__synchronized_action.ali
+[RESULTING OPTIONS]
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Synchronized_Action\Objects\
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Synchronized_Action\Objects\
+-LE:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnarl.a
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

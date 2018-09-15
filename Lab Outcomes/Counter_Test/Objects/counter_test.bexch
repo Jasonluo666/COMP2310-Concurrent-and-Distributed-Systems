@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__counter_test.o
+[PROJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\counter_test.gpr
+20150801024104
+[BOUND OBJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\Objects\counter_test.o
+[GENERATED SOURCE FILES]
+b__counter_test.ads
+b__counter_test.adb
+b__counter_test.ali
+[RESULTING OPTIONS]
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\Objects\
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Counter_Test\Objects\
+-LE:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnarl.a
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

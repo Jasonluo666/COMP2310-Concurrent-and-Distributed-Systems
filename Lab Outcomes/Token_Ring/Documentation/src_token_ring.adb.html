@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+
+  <title>
+    File: token_ring.adb
+  </title>
+  <link rel='stylesheet' href='support/docgen.css' type='text/css'/>
+  <link rel='stylesheet' href='support/tags.css' type='text/css'/>
+  <script src='support/docgen.js' type='text/javascript' charset='utf-8'></script>
+</head>
+<body onload="onloadDoc();">
+
+<div id='leftSide'>
+  <div id='leftSideInside'>
+  <div id='header'>
+    <h2 class="button">Documentation</h2>
+    <a href='toc.html'><div class="button2">Table of Contents</div></a>
+
+    <a href='tree.html'><div class="button2">Class Inheritance Tree</div></a>
+
+  </div>
+  </div>
+</div> <!-- leftSide -->
+
+<div class='subprograms'>
+  <div class='details'><ol><li id="l1"><pre><span class="keyword">with</span> Ada.Numerics.Discrete_Random; <span class="keyword">use</span> Ada.Numerics; </pre></li>
+<li id="l2"><pre><span class="keyword">with</span> Ada.Text_IO;                  <span class="keyword">use</span> Ada.Text_IO; </pre></li>
+<li id="l3"><pre> </pre></li>
+<li id="l4"><pre><span class="keyword">procedure</span> Token_Ring <span class="keyword">is</span> </pre></li>
+<li id="l5"><pre> </pre></li>
+<li id="l6"><pre>   No_of_Nodes       : <span class="keyword">constant</span> Positive := 8; </pre></li>
+<li id="l7"><pre>   Elements_per_Node : <span class="keyword">constant</span> Positive := 100_000; </pre></li>
+<li id="l8"><pre> </pre></li>
+<li id="l9"><pre>   <span class="keyword">type</span> Element <span class="keyword">is</span> <span class="keyword">new</span> Long_Integer; </pre></li>
+<li id="l10"><pre> </pre></li>
+<li id="l11"><pre>   Size : <span class="keyword">constant</span> Positive := <a href="src_token_ring.adb.html#l7" title="defined at token_ring.adb:7:4">Elements_per_Node</a> * <a href="src_token_ring.adb.html#l6" title="defined at token_ring.adb:6:4">No_of_Nodes</a>; </pre></li>
+<li id="l12"><pre>   <span class="keyword">subtype</span> Index <span class="keyword">is</span> Positive <span class="keyword">range</span> 1 .. <a href="src_token_ring.adb.html#l11" title="defined at token_ring.adb:11:4">Size</a>; </pre></li>
+<li id="l13"><pre> </pre></li>
+<li id="l14"><pre>   <span class="keyword">package</span> Random_Elements <span class="keyword">is</span> <span class="keyword">new</span> Discrete_Random (<a href="src_token_ring.adb.html#l9" title="defined at token_ring.adb:9:9">Element</a>); </pre></li>
+<li id="l15"><pre>   <span class="keyword">use</span> <a href="src_token_ring.adb.html#l14" title="defined at token_ring.adb:14:12">Random_Elements</a>; </pre></li>
+<li id="l16"><pre> </pre></li>
+<li id="l17"><pre>   <span class="keyword">type</span> Nodes <span class="keyword">is</span> <span class="keyword">mod</span> <a href="src_token_ring.adb.html#l6" title="defined at token_ring.adb:6:4">No_of_Nodes</a>; </pre></li>
+<li id="l18"><pre> </pre></li>
+<li id="l19"><pre>   <span class="keyword">task</span> <span class="keyword">type</span> <a href="src_token_ring.adb.html#l34" title="defined at token_ring.adb:19:14">Node</a> <span class="keyword">is</span> </pre></li>
+<li id="l20"><pre>      <span class="keyword">entry</span> <a href="src_token_ring.adb.html#l39" title="defined at token_ring.adb:20:13">Handover_Id</a> (Assigned_Id : <a href="src_token_ring.adb.html#l17" title="defined at token_ring.adb:17:9">Nodes</a>); </pre></li>
+<li id="l21"><pre>      <span class="keyword">entry</span> <a href="src_token_ring.adb.html#l50" title="defined at token_ring.adb:21:13">Token</a>; </pre></li>
+<li id="l22"><pre>   <span class="keyword">end</span> <span class="droplink">Node<ul><li><a href="src_token_ring.adb.html#l19" title="To spec">To spec</a></li><li><a href="src_token_ring.adb.html#l34" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l23"><pre> </pre></li>
+<li id="l24"><pre>   Ring : <span class="keyword">array</span> (<a href="src_token_ring.adb.html#l17" title="defined at token_ring.adb:17:9">Nodes</a>) <span class="keyword">of</span> <span class="droplink">Node<ul><li><a href="src_token_ring.adb.html#l19" title="To spec">To spec</a></li><li><a href="src_token_ring.adb.html#l34" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l25"><pre> </pre></li>
+<li id="l26"><pre>   Random_Field : <span class="keyword">array</span> (<a href="src_token_ring.adb.html#l12" title="defined at token_ring.adb:12:12">Index</a>) <span class="keyword">of</span> <a href="src_token_ring.adb.html#l9" title="defined at token_ring.adb:9:9">Element</a> := (<span class="keyword">others</span> =&gt; <a href="src_token_ring.adb.html#l9" title="defined at token_ring.adb:9:9">Element</a>&apos;Invalid_Value); </pre></li>
+<li id="l27"><pre>   Global_Max   : <a href="src_token_ring.adb.html#l9" title="defined at token_ring.adb:9:9">Element</a>                  := <a href="src_token_ring.adb.html#l9" title="defined at token_ring.adb:9:9">Element</a>&apos;First; </pre></li>
+<li id="l28"><pre> </pre></li>
+<li id="l29"><pre>   Element_Generator : Generator; </pre></li>
+<li id="l30"><pre> </pre></li>
+<li id="l31"><pre>   <span class="keyword">function</span> Partition_First (Id : <a href="src_token_ring.adb.html#l17" title="defined at token_ring.adb:17:9">Nodes</a>) <span class="keyword">return</span> <a href="src_token_ring.adb.html#l12" title="defined at token_ring.adb:12:12">Index</a> <span class="keyword">is</span> (<a href="src_token_ring.adb.html#l12" title="defined at token_ring.adb:12:12">Index</a>&apos;First +  Natural (<a href="src_token_ring.adb.html#l31" title="defined at token_ring.adb:31:30">Id</a>)      * <a href="src_token_ring.adb.html#l7" title="defined at token_ring.adb:7:4">Elements_per_Node</a>); </pre></li>
+<li id="l32"><pre>   <span class="keyword">function</span> Partition_Last  (Id : <a href="src_token_ring.adb.html#l17" title="defined at token_ring.adb:17:9">Nodes</a>) <span class="keyword">return</span> <a href="src_token_ring.adb.html#l12" title="defined at token_ring.adb:12:12">Index</a> <span class="keyword">is</span> (<a href="src_token_ring.adb.html#l12" title="defined at token_ring.adb:12:12">Index</a>&apos;First + (Natural (<a href="src_token_ring.adb.html#l32" title="defined at token_ring.adb:32:30">Id</a>) + 1) * <a href="src_token_ring.adb.html#l7" title="defined at token_ring.adb:7:4">Elements_per_Node</a> - 1); </pre></li>
+<li id="l33"><pre> </pre></li>
+<li id="l34"><pre>   <span class="keyword">task</span> <span class="keyword">body</span> <a href="src_token_ring.adb.html#l19" title="defined at token_ring.adb:19:14">Node</a> <span class="keyword">is</span> </pre></li>
+<li id="l35"><pre> </pre></li>
+<li id="l36"><pre>      Id : <a href="src_token_ring.adb.html#l17" title="defined at token_ring.adb:17:9">Nodes</a> := <a href="src_token_ring.adb.html#l17" title="defined at token_ring.adb:17:9">Nodes</a>&apos;Invalid_Value; </pre></li>
+<li id="l37"><pre> </pre></li>
+<li id="l38"><pre>   <span class="keyword">begin</span> </pre></li>
+<li id="l39"><pre>      <span class="keyword">accept</span> <a href="src_token_ring.adb.html#l20" title="defined at token_ring.adb:20:13">Handover_Id</a> (Assigned_Id : <a href="src_token_ring.adb.html#l17" title="defined at token_ring.adb:17:9">Nodes</a>) <span class="keyword">do</span> </pre></li>
+<li id="l40"><pre>         Id := <a href="src_token_ring.adb.html#l20" title="defined at token_ring.adb:20:26">Assigned_Id</a>; </pre></li>
+<li id="l41"><pre>      <span class="keyword">end</span> <span class="droplink">Handover_Id<ul><li><a href="src_token_ring.adb.html#l20" title="To spec">To spec</a></li><li><a href="src_token_ring.adb.html#l39" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l42"><pre> </pre></li>
+<li id="l43"><pre>      <span class="keyword">declare</span> </pre></li>
+<li id="l44"><pre>         Next      : <span class="keyword">constant</span> <a href="src_token_ring.adb.html#l17" title="defined at token_ring.adb:17:9">Nodes</a>   := Id + 1; </pre></li>
+<li id="l45"><pre>         Local_Max :          <a href="src_token_ring.adb.html#l9" title="defined at token_ring.adb:9:9">Element</a> := <a href="src_token_ring.adb.html#l9" title="defined at token_ring.adb:9:9">Element</a>&apos;First; </pre></li>
+<li id="l46"><pre> </pre></li>
+<li id="l47"><pre>         <span class="keyword">subtype</span> Partition <span class="keyword">is</span> <a href="src_token_ring.adb.html#l12" title="defined at token_ring.adb:12:12">Index</a> <span class="keyword">range</span> <a href="src_token_ring.adb.html#l31" title="defined at token_ring.adb:31:13">Partition_First</a> (Id) .. <a href="src_token_ring.adb.html#l32" title="defined at token_ring.adb:32:13">Partition_Last</a> (Id); </pre></li>
+<li id="l48"><pre> </pre></li>
+<li id="l49"><pre>      <span class="keyword">begin</span> </pre></li>
+<li id="l50"><pre>         <span class="keyword">accept</span> <a href="src_token_ring.adb.html#l21" title="defined at token_ring.adb:21:13">Token</a>; </pre></li>
+<li id="l51"><pre> </pre></li>
+<li id="l52"><pre>         <span class="keyword">if</span> Id /= <a href="src_token_ring.adb.html#l17" title="defined at token_ring.adb:17:9">Nodes</a>&apos;Last <span class="keyword">then</span> </pre></li>
+<li id="l53"><pre>            <a href="src_token_ring.adb.html#l24" title="defined at token_ring.adb:24:4">Ring</a> (Next).<span class="droplink">Token<ul><li><a href="src_token_ring.adb.html#l21" title="To spec">To spec</a></li><li><a href="src_token_ring.adb.html#l50" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l54"><pre>         <span class="keyword">end</span> <span class="keyword">if</span>; </pre></li>
+<li id="l55"><pre> </pre></li>
+<li id="l56"><pre>         <span class="keyword">if</span> Id = <a href="src_token_ring.adb.html#l17" title="defined at token_ring.adb:17:9">Nodes</a>&apos;Last <span class="keyword">then</span> </pre></li>
+<li id="l57"><pre>            <a href="src_token_ring.adb.html#l24" title="defined at token_ring.adb:24:4">Ring</a> (Next).<span class="droplink">Token<ul><li><a href="src_token_ring.adb.html#l21" title="To spec">To spec</a></li><li><a href="src_token_ring.adb.html#l50" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l58"><pre>         <span class="keyword">end</span> <span class="keyword">if</span>; </pre></li>
+<li id="l59"><pre> </pre></li>
+<li id="l60"><pre>         <span class="keyword">accept</span> <span class="droplink">Token<ul><li><a href="src_token_ring.adb.html#l21" title="To spec">To spec</a></li><li><a href="src_token_ring.adb.html#l50" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l61"><pre> </pre></li>
+<li id="l62"><pre>         <span class="keyword">if</span> Id /= <a href="src_token_ring.adb.html#l17" title="defined at token_ring.adb:17:9">Nodes</a>&apos;Last <span class="keyword">then</span> </pre></li>
+<li id="l63"><pre>            <a href="src_token_ring.adb.html#l24" title="defined at token_ring.adb:24:4">Ring</a> (Next).<span class="droplink">Token<ul><li><a href="src_token_ring.adb.html#l21" title="To spec">To spec</a></li><li><a href="src_token_ring.adb.html#l50" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l64"><pre>         <span class="keyword">end</span> <span class="keyword">if</span>; </pre></li>
+<li id="l65"><pre>      <span class="keyword">end</span>; </pre></li>
+<li id="l66"><pre>   <span class="keyword">end</span> <span class="droplink">Node<ul><li><a href="src_token_ring.adb.html#l19" title="To spec">To spec</a></li><li><a href="src_token_ring.adb.html#l34" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l67"><pre> </pre></li>
+<li id="l68"><pre><span class="keyword">begin</span> </pre></li>
+<li id="l69"><pre>   Reset (<a href="src_token_ring.adb.html#l29" title="defined at token_ring.adb:29:4">Element_Generator</a>); </pre></li>
+<li id="l70"><pre>   <span class="keyword">for</span> e <span class="keyword">of</span> <a href="src_token_ring.adb.html#l26" title="defined at token_ring.adb:26:4">Random_Field</a> <span class="keyword">loop</span> </pre></li>
+<li id="l71"><pre>      e := Random (<a href="src_token_ring.adb.html#l29" title="defined at token_ring.adb:29:4">Element_Generator</a>); </pre></li>
+<li id="l72"><pre>   <span class="keyword">end</span> <span class="keyword">loop</span>; </pre></li>
+<li id="l73"><pre> </pre></li>
+<li id="l74"><pre>   <span class="keyword">for</span> n <span class="keyword">in</span> <a href="src_token_ring.adb.html#l17" title="defined at token_ring.adb:17:9">Nodes</a> <span class="keyword">loop</span> </pre></li>
+<li id="l75"><pre>      <a href="src_token_ring.adb.html#l24" title="defined at token_ring.adb:24:4">Ring</a> (n).<span class="droplink">Handover_Id<ul><li><a href="src_token_ring.adb.html#l20" title="To spec">To spec</a></li><li><a href="src_token_ring.adb.html#l39" title="To body">To body</a></li></ul></span> (n); </pre></li>
+<li id="l76"><pre>   <span class="keyword">end</span> <span class="keyword">loop</span>; </pre></li>
+<li id="l77"><pre> </pre></li>
+<li id="l78"><pre>   <a href="src_token_ring.adb.html#l24" title="defined at token_ring.adb:24:4">Ring</a> (<a href="src_token_ring.adb.html#l24" title="defined at token_ring.adb:24:4">Ring</a>&apos;First).<span class="droplink">Token<ul><li><a href="src_token_ring.adb.html#l21" title="To spec">To spec</a></li><li><a href="src_token_ring.adb.html#l50" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l79"><pre><span class="keyword">end</span> <span class="droplink">Token_Ring<ul><li><a href="src_token_ring.adb.html#l4" title="To spec">To spec</a></li><li><a href="src_token_ring.adb.html#l4" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l80"><pre> </pre></li>
+<li id="l81"><pre><span class="comment">--           for e of Random_Field (Partition) loop</span> </pre></li>
+<li id="l82"><pre><span class="comment">--              Local_Max := Element&apos;Max (Local_Max, e);</span> </pre></li>
+<li id="l83"><pre><span class="comment">--           end loop;</span> </pre></li>
+<li id="l84"><pre><span class="comment">--</span> </pre></li>
+<li id="l85"><pre><span class="comment">--           Put_Line (&quot;Task&quot; &amp; Nodes&apos;Image (Id) &amp; &quot; reports a local maximum of:&quot; &amp; Element&apos;Image (Local_Max));</span> </pre></li>
+<li id="l86"><pre> </pre></li>
+<li id="l87"><pre><span class="comment">--           Global_Max := Element&apos;Max (Global_Max, Local_Max);</span> </pre></li>
+<li id="l88"><pre><span class="comment">--</span> </pre></li>
+<li id="l89"><pre><span class="comment">--           Put_Line (&quot;Task&quot; &amp; Nodes&apos;Image (Id) &amp; &quot; set a global maximum of:&quot; &amp; Element&apos;Image (Global_Max));</span> </pre></li>
+</ol></div>
+</div>
+
+</body>
+</html>

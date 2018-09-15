@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+
+  <title>
+    File: max.adb
+  </title>
+  <link rel='stylesheet' href='support/docgen.css' type='text/css'/>
+  <link rel='stylesheet' href='support/tags.css' type='text/css'/>
+  <script src='support/docgen.js' type='text/javascript' charset='utf-8'></script>
+</head>
+<body onload="onloadDoc();">
+
+<div id='leftSide'>
+  <div id='leftSideInside'>
+  <div id='header'>
+    <h2 class="button">Documentation</h2>
+    <a href='toc.html'><div class="button2">Table of Contents</div></a>
+
+    <a href='tree.html'><div class="button2">Class Inheritance Tree</div></a>
+
+  </div>
+  </div>
+</div> <!-- leftSide -->
+
+<div class='subprograms'>
+  <div class='details'><ol><li id="l1"><pre><span class="keyword">with</span> Ada.Numerics.Discrete_Random; <span class="keyword">use</span> Ada.Numerics; </pre></li>
+<li id="l2"><pre><span class="keyword">with</span> Ada.Text_IO;                  <span class="keyword">use</span> Ada.Text_IO; </pre></li>
+<li id="l3"><pre><span class="keyword">with</span> <span class="droplink">Reduce_Concurrent<ul><li><a href="reduce_concurrent.ads.html#reduce_concurrent.ads:9:10" title="To API doc">To API doc</a></li><li><a href="src_reduce_concurrent.ads.html#l9" title="To spec">To spec</a></li><li><a href="src_reduce_concurrent.adb.html#l1" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l4"><pre><span class="keyword">with</span> <span class="droplink">Reduce_Iterative<ul><li><a href="reduce_iterative.ads.html#reduce_iterative.ads:9:10" title="To API doc">To API doc</a></li><li><a href="src_reduce_iterative.ads.html#l9" title="To spec">To spec</a></li><li><a href="src_reduce_iterative.adb.html#l1" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l5"><pre><span class="keyword">with</span> <span class="droplink">Reduce_Recursive<ul><li><a href="reduce_recursive.ads.html#reduce_recursive.ads:9:10" title="To API doc">To API doc</a></li><li><a href="src_reduce_recursive.ads.html#l9" title="To spec">To spec</a></li><li><a href="src_reduce_recursive.adb.html#l1" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l6"><pre> </pre></li>
+<li id="l7"><pre><span class="keyword">procedure</span> Max <span class="keyword">is</span> </pre></li>
+<li id="l8"><pre> </pre></li>
+<li id="l9"><pre>   <span class="keyword">type</span> Element <span class="keyword">is</span> <span class="keyword">new</span> Natural; </pre></li>
+<li id="l10"><pre> </pre></li>
+<li id="l11"><pre>   Size : <span class="keyword">constant</span> Positive := 1_001; </pre></li>
+<li id="l12"><pre>   <span class="keyword">subtype</span> Index <span class="keyword">is</span> Positive <span class="keyword">range</span> 1 .. <a href="src_max.adb.html#l11" title="defined at max.adb:11:4">Size</a>; </pre></li>
+<li id="l13"><pre> </pre></li>
+<li id="l14"><pre>   <span class="keyword">type</span> Element_Array <span class="keyword">is</span> <span class="keyword">array</span> (<a href="src_max.adb.html#l12" title="defined at max.adb:12:12">Index</a> <span class="keyword">range</span> &lt;&gt;) <span class="keyword">of</span> <a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a>; </pre></li>
+<li id="l15"><pre> </pre></li>
+<li id="l16"><pre>   <span class="keyword">package</span> Random_Elements <span class="keyword">is</span> <span class="keyword">new</span> Discrete_Random (<a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a>); </pre></li>
+<li id="l17"><pre>   <span class="keyword">use</span> <a href="src_max.adb.html#l16" title="defined at max.adb:16:12">Random_Elements</a>; </pre></li>
+<li id="l18"><pre> </pre></li>
+<li id="l19"><pre>   <span class="keyword">function</span> <a href="src_reduce_concurrent.adb.html#l1" title="defined at max.adb:19:13">Max_Concurrent</a> <span class="keyword">is</span> <span class="keyword">new</span> <span class="droplink">Reduce_Concurrent<ul><li><a href="reduce_concurrent.ads.html#reduce_concurrent.ads:9:10" title="To API doc">To API doc</a></li><li><a href="src_reduce_concurrent.ads.html#l9" title="To spec">To spec</a></li><li><a href="src_reduce_concurrent.adb.html#l1" title="To body">To body</a></li></ul></span> (<a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a>, <a href="src_max.adb.html#l12" title="defined at max.adb:12:12">Index</a>, <a href="src_max.adb.html#l14" title="defined at max.adb:14:9">Element_Array</a>, <a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a>&apos;<span class="droplink">Max<ul><li><a href="src_max.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_max.adb.html#l7" title="To body">To body</a></li></ul></span>); </pre></li>
+<li id="l20"><pre>   <span class="keyword">function</span> <a href="src_reduce_iterative.adb.html#l1" title="defined at max.adb:20:13">Max_Iterative</a>  <span class="keyword">is</span> <span class="keyword">new</span> <span class="droplink">Reduce_Iterative<ul><li><a href="reduce_iterative.ads.html#reduce_iterative.ads:9:10" title="To API doc">To API doc</a></li><li><a href="src_reduce_iterative.ads.html#l9" title="To spec">To spec</a></li><li><a href="src_reduce_iterative.adb.html#l1" title="To body">To body</a></li></ul></span>  (<a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a>, <a href="src_max.adb.html#l12" title="defined at max.adb:12:12">Index</a>, <a href="src_max.adb.html#l14" title="defined at max.adb:14:9">Element_Array</a>, <a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a>&apos;<span class="droplink">Max<ul><li><a href="src_max.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_max.adb.html#l7" title="To body">To body</a></li></ul></span>); </pre></li>
+<li id="l21"><pre>   <span class="keyword">function</span> <a href="src_reduce_recursive.adb.html#l1" title="defined at max.adb:21:13">Max_Recursive</a>  <span class="keyword">is</span> <span class="keyword">new</span> <span class="droplink">Reduce_Recursive<ul><li><a href="reduce_recursive.ads.html#reduce_recursive.ads:9:10" title="To API doc">To API doc</a></li><li><a href="src_reduce_recursive.ads.html#l9" title="To spec">To spec</a></li><li><a href="src_reduce_recursive.adb.html#l1" title="To body">To body</a></li></ul></span>  (<a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a>, <a href="src_max.adb.html#l12" title="defined at max.adb:12:12">Index</a>, <a href="src_max.adb.html#l14" title="defined at max.adb:14:9">Element_Array</a>, <a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a>&apos;<span class="droplink">Max<ul><li><a href="src_max.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_max.adb.html#l7" title="To body">To body</a></li></ul></span>); </pre></li>
+<li id="l22"><pre> </pre></li>
+<li id="l23"><pre>   Random_Field      : <a href="src_max.adb.html#l14" title="defined at max.adb:14:9">Element_Array</a> (<a href="src_max.adb.html#l12" title="defined at max.adb:12:12">Index</a>); </pre></li>
+<li id="l24"><pre>   Element_Generator : Generator; </pre></li>
+<li id="l25"><pre> </pre></li>
+<li id="l26"><pre><span class="keyword">begin</span> </pre></li>
+<li id="l27"><pre>   Reset (<a href="src_max.adb.html#l24" title="defined at max.adb:24:4">Element_Generator</a>); </pre></li>
+<li id="l28"><pre>   <span class="keyword">for</span> e <span class="keyword">of</span> <a href="src_max.adb.html#l23" title="defined at max.adb:23:4">Random_Field</a> <span class="keyword">loop</span> </pre></li>
+<li id="l29"><pre>      e := Random (<a href="src_max.adb.html#l24" title="defined at max.adb:24:4">Element_Generator</a>); </pre></li>
+<li id="l30"><pre>   <span class="keyword">end</span> <span class="keyword">loop</span>; </pre></li>
+<li id="l31"><pre> </pre></li>
+<li id="l32"><pre>   <span class="keyword">declare</span> </pre></li>
+<li id="l33"><pre>      Max_Concurrent_Result : <span class="keyword">constant</span> <a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a> := <span class="droplink">Max_Concurrent<ul><li><a href="src_max.adb.html#l19" title="To spec">To spec</a></li><li><a href="src_reduce_concurrent.adb.html#l1" title="To body">To body</a></li></ul></span> (<a href="src_max.adb.html#l23" title="defined at max.adb:23:4">Random_Field</a>); </pre></li>
+<li id="l34"><pre>      Max_Iterative_Result  : <span class="keyword">constant</span> <a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a> := <span class="droplink">Max_Iterative<ul><li><a href="src_max.adb.html#l20" title="To spec">To spec</a></li><li><a href="src_reduce_iterative.adb.html#l1" title="To body">To body</a></li></ul></span>  (<a href="src_max.adb.html#l23" title="defined at max.adb:23:4">Random_Field</a>); </pre></li>
+<li id="l35"><pre>      Max_Recursive_Result  : <span class="keyword">constant</span> <a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a> := <span class="droplink">Max_Recursive<ul><li><a href="src_max.adb.html#l21" title="To spec">To spec</a></li><li><a href="src_reduce_recursive.adb.html#l1" title="To body">To body</a></li></ul></span>  (<a href="src_max.adb.html#l23" title="defined at max.adb:23:4">Random_Field</a>); </pre></li>
+<li id="l36"><pre> </pre></li>
+<li id="l37"><pre>   <span class="keyword">begin</span> </pre></li>
+<li id="l38"><pre>      Put_Line (<span class="string">&quot;Max (concurrent):&quot;</span> &amp; <a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a>&apos;Image (Max_Concurrent_Result)); </pre></li>
+<li id="l39"><pre>      Put_Line (<span class="string">&quot;Max (iterative) :&quot;</span> &amp; <a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a>&apos;Image (Max_Iterative_Result)); </pre></li>
+<li id="l40"><pre>      Put_Line (<span class="string">&quot;Max (recursive) :&quot;</span> &amp; <a href="src_max.adb.html#l9" title="defined at max.adb:9:9">Element</a>&apos;Image (Max_Recursive_Result)); </pre></li>
+<li id="l41"><pre> </pre></li>
+<li id="l42"><pre>      <span class="keyword">if</span> Max_Concurrent_Result = Max_Iterative_Result </pre></li>
+<li id="l43"><pre>        <span class="keyword">and</span> <span class="keyword">then</span> Max_Iterative_Result = Max_Recursive_Result </pre></li>
+<li id="l44"><pre>      <span class="keyword">then</span> </pre></li>
+<li id="l45"><pre>         Put_Line (<span class="string">&quot;All results matching - seems fine as a quick sanity check&quot;</span>); </pre></li>
+<li id="l46"><pre>      <span class="keyword">else</span> </pre></li>
+<li id="l47"><pre>         <span class="keyword">raise</span> Program_Error <span class="keyword">with</span> <span class="string">&quot;Results are not matching&quot;</span>; </pre></li>
+<li id="l48"><pre>      <span class="keyword">end</span> <span class="keyword">if</span>; </pre></li>
+<li id="l49"><pre>   <span class="keyword">end</span>; </pre></li>
+<li id="l50"><pre><span class="keyword">end</span> <span class="droplink">Max<ul><li><a href="src_max.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_max.adb.html#l7" title="To body">To body</a></li></ul></span>; </pre></li>
+</ol></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+[GENERATED OBJECT FILE]
+b__test_concurrent_mergesort.o
+[PROJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr
+20150815084358
+[BOUND OBJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Objects\cpu_counter.o
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Objects\concurrent_mergesort.o
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Objects\sorting_tests.o
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Objects\test_concurrent_mergesort.o
+[GENERATED SOURCE FILES]
+b__test_concurrent_mergesort.ads
+b__test_concurrent_mergesort.adb
+b__test_concurrent_mergesort.ali
+[RESULTING OPTIONS]
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Objects\
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Objects\
+-LE:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnarl.a
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

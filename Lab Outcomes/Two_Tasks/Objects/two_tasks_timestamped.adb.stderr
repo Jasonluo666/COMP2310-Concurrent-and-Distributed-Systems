@@ -1,0 +1,2 @@
+two_tasks_timestamped.adb:86:04: warning: useless assignment to "Mutual", value overwritten at line 96
+two_tasks_timestamped.adb:96:04: warning: possibly useless assignment to "Mutual", value might not be referenced

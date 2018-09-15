@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<Locations>
+  <Project>
+    <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\cpu_counter.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\cpu_counter.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\sorting_tests.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\sorting_tests.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\test_concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 34" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\cpu_counter.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\cpu_counter.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 34" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 34" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 76" line=" 23" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 27" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 34" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 2" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 22" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 34" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 2" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 22" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 34" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 2" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 9" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 22" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 27" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 34" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 34" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 9" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\cpu_counter.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\cpu_counter.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\cpu_counter.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 34" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 34" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 34" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 9" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\concurrent_mergesort.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Concurrent_Mergesort\Sources\concurrent_mergesort.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

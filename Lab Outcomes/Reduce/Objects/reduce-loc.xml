@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_file>
+    <file_marker column=" 66" line=" 19" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\max.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 21" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 10" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 62" line=" 15" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_recursive.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 51" line=" 26" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 16" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 17" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 26" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 29" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 48" line=" 30" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 26" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 4" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 49" line=" 26" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 27" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 26" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 27" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 26" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 55" line=" 27" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 59" line=" 30" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 55" line=" 27" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 56" line=" 26" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Sources\reduce_concurrent.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

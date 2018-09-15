@@ -1,0 +1,25 @@
+[GENERATED OBJECT FILE]
+b__max.o
+[PROJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\reduce.gpr
+20150823031422
+[BOUND OBJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Objects\reduce_concurrent.o
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Objects\reduce_iterative.o
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Objects\reduce_recursive.o
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Objects\max.o
+[GENERATED SOURCE FILES]
+b__max.ads
+b__max.adb
+b__max.ali
+[RESULTING OPTIONS]
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Objects\
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Reduce\Objects\
+-LE:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnarl.a
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

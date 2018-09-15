@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__queue_test_private.o
+[PROJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Queue_Sequential\queue_sequential.gpr
+20150726085146
+[BOUND OBJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Queue_Sequential\Objects\queue_pack_private.o
+C:\Users\ljsPC\Desktop\COMP2310\Queue_Sequential\Objects\queue_test_private.o
+[GENERATED SOURCE FILES]
+b__queue_test_private.ads
+b__queue_test_private.adb
+b__queue_test_private.ali
+[RESULTING OPTIONS]
+-LC:\Users\ljsPC\Desktop\COMP2310\Queue_Sequential\Objects\
+-LC:\Users\ljsPC\Desktop\COMP2310\Queue_Sequential\Objects\
+-LE:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

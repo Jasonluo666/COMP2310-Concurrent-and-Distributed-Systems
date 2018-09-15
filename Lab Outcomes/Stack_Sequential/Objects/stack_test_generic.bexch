@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__stack_test_generic.o
+[PROJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Stack_Sequential\stack_sequential.gpr
+20170801124346
+[BOUND OBJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Stack_Sequential\Objects\stack_pack_generic.o
+C:\Users\ljsPC\Desktop\COMP2310\Lab\Stack_Sequential\Objects\stack_test_generic.o
+[GENERATED SOURCE FILES]
+b__stack_test_generic.ads
+b__stack_test_generic.adb
+b__stack_test_generic.ali
+[RESULTING OPTIONS]
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Stack_Sequential\Objects\
+-LC:\Users\ljsPC\Desktop\COMP2310\Lab\Stack_Sequential\Objects\
+-LE:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

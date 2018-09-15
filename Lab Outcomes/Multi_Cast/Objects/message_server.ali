@@ -1,0 +1,178 @@
+V "GNAT Lib v2017"
+A -gnatA
+A -g
+A -gnatVa
+A -gnatVr
+A -gnatVp
+A -gnatVm
+A -gnatVi
+A -gnatVf
+A -gnatVe
+A -gnatVd
+A -gnatVc
+A -gnatVO
+A -gnatw.a
+A -gnatw.b
+A -gnatwc
+A -gnatw.c
+A -gnatwd
+A -gnatwf
+A -gnatwg
+A -gnatwh
+A -gnatw.h
+A -gnatwi
+A -gnatw.i
+A -gnatwj
+A -gnatwk
+A -gnatw.k
+A -gnatwl
+A -gnatw.l
+A -gnatwm
+A -gnatw.m
+A -gnatw.n
+A -gnatwo
+A -gnatw.o
+A -gnatwp
+A -gnatw.p
+A -gnatwq
+A -gnatwr
+A -gnatw.r
+A -gnatw.s
+A -gnatwt
+A -gnatw.t
+A -gnatwu
+A -gnatw.u
+A -gnatwv
+A -gnatw.v
+A -gnatww
+A -gnatw.w
+A -gnatwx
+A -gnatw.x
+A -gnatwy
+A -gnatwz
+A -gnat12
+A -gnatya
+A -gnatyA
+A -gnatyb
+A -gnatyB
+A -gnatyc
+A -gnatyC
+A -gnatye
+A -gnatyh
+A -gnatyf
+A -gnatyi
+A -gnatyk
+A -gnatyl
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnato
+A -fstack-check=specific
+A -gnatE
+A -gnata
+A -g
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV SIMPLE_BARRIERS
+RV NO_IO
+RV NO_PROTECTED_TYPES
+RV NO_REQUEUE_STATEMENTS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV PURE_BARRIERS
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=1+
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U message_server%b	message_server.adb	961917c8 DE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U message_server%s	message_server.ads	0b2f491c BN DE EE NE OO PK GE
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+D ada.ads		20170516105950 76789da1 ada%s
+D a-except.ads		20170516105952 291912d5 ada.exceptions%s
+D a-ioexce.ads		20170516105948 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105954 d3a89129 ada.tags%s
+D a-textio.ads		20170516105954 386df5d4 ada.text_io%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D i-cstrin.ads		20170516105952 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20170516105950 e53d8b8e interfaces.c_streams%s
+D message_server.ads	20170817025150 0b2f491c message_server%s
+D message_server.adb	20170817025454 a55bab00 message_server%b
+D system.ads		20170516105954 32a08138 system%s
+D s-atacco.ads		20170516105954 4c36d12f system.address_to_access_conversions%s
+D s-crtl.ads		20170516105948 0ebbdb71 system.crtl%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-ficobl.ads		20170516105956 078245e4 system.file_control_block%s
+D s-multip.ads		20170516105948 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20170516105954 2e5b26a9 system.os_interface%s
+D s-parame.ads		20170516105954 7e2a0d7f system.parameters%s
+D s-soflin.ads		20170516105950 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105954 a37c21ec system.stack_checking%s
+D s-stausa.ads		20170516105954 017a0a05 system.stack_usage%s
+D s-stalib.ads		20170516105954 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20170516105952 601f6b72 system.task_info%s
+D s-taspri.ads		20170516105952 6c1d93d4 system.task_primitives%s
+D s-taskin.ads		20170516105956 05d6152c system.tasking%s
+D s-taprob.ads		20170516105950 acd6094d system.tasking.protected_objects%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105952 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20170516105954 1b7d22d2 system.wch_con%s
+D s-win32.ads		20170516105948 b7f96285 system.win32%s
+X 1 ada.ads
+16K9*Ada 20e8 13|1r6 1r26
+X 6 a-textio.ads
+49K13*Text_IO 471e16 13|1w10 1r30
+263U14*Put_Line 13|22s13 37s13
+X 12 message_server.ads
+2+9 Message 11r19 17r51 18r47 19r47 20r47 13|7r40 14r43 30r31 45r48
+3i4 Postboxes{positive} 7r44
+5k9*Message_Server 2z9 3z4 27l5 27e19 13|3b14 54l5 54t19
+7I12*Box{positive} 8r53 13r32 17r33 20r29 13|7r28 31r26 34r28 38r22 45r31
+8A9*Boxes(7I12)<integer> 18r29 13|14r29
+9R9*Box_Content 12e14 13r40
+10b7 Available{boolean} 13|10m25 18r55 31r47 34r45 45r72 48m20
+11*7 Data{2+9} 13|10m44 49r43
+13A9*Box_Contents(9R9)<integer> 23r25
+15w14*Post_Office 13|5b19 53l8 53t19
+17U17 Send 17>28 17>40 13|7b17 12l11 12t15 24s16 39s16
+17i28 To{7I12} 13|7b23 10r17
+17*40 Data{2+9} 13|7b33 10r52
+18Y13 Multicast 18>24 18>36 13|14b13 20r21 28l11 28t20
+18a24 To{8A9} 13|18r28 18r47 23r22 24r22
+18*36 Data{2+9} 13|24r30
+19Y13 Broadcast 19>36 13|30b13 43l11 43t20
+19*36 Data{2+9} 13|35r23 39r25
+20Y13 Receive 20<36 13|45b13 48r33 51l11 51t18
+20*36 Data{2+9} 13|49m10
+23a7 Store{13A9} 13|10m10 18r40 31r37 34r35 45r62 48m10 49r33
+24b7 Check_Multicast{boolean} 13|15r12 19m13 50m10
+X 13 message_server.adb
+14a24 To{12|8A9}
+14*36 Data{12|2+9}
+18i23 i{integer} 18r51
+23i17 B{integer} 24r26
+30*24 Data{12|2+9}
+31i21 B{12|7I12} 31r44
+34i23 B{12|7I12} 34r42
+38i17 B{12|7I12} 39r22
+45i26 B 45r69 48r17 48r42 49r40
+45*37 Data{12|2+9}
+X 24 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

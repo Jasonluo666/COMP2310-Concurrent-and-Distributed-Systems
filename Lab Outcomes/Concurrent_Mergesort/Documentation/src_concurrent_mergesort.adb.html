@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+
+  <title>
+    File: concurrent_mergesort.adb
+  </title>
+  <link rel='stylesheet' href='support/docgen.css' type='text/css'/>
+  <link rel='stylesheet' href='support/tags.css' type='text/css'/>
+  <script src='support/docgen.js' type='text/javascript' charset='utf-8'></script>
+</head>
+<body onload="onloadDoc();">
+
+<div id='leftSide'>
+  <div id='leftSideInside'>
+  <div id='header'>
+    <h2 class="button">Documentation</h2>
+    <a href='toc.html'><div class="button2">Table of Contents</div></a>
+
+    <a href='tree.html'><div class="button2">Class Inheritance Tree</div></a>
+
+  </div>
+  </div>
+</div> <!-- leftSide -->
+
+<div class='subprograms'>
+  <div class='details'><ol><li id="l1"><pre><span class="keyword">with</span> Ada.Exceptions; <span class="keyword">use</span> Ada.Exceptions; </pre></li>
+<li id="l2"><pre><span class="keyword">with</span> Ada.Text_IO;    <span class="keyword">use</span> Ada.Text_IO; </pre></li>
+<li id="l3"><pre><span class="keyword">with</span> <span class="droplink">CPU_Counter<ul><li><a href="cpu_counter.ads.html#cpu_counter.ads:3:9" title="To API doc">To API doc</a></li><li><a href="src_cpu_counter.ads.html#l3" title="To spec">To spec</a></li><li><a href="src_cpu_counter.adb.html#l1" title="To body">To body</a></li></ul></span>;    <span class="keyword">use</span> <span class="droplink">CPU_Counter<ul><li><a href="cpu_counter.ads.html#cpu_counter.ads:3:9" title="To API doc">To API doc</a></li><li><a href="src_cpu_counter.ads.html#l3" title="To spec">To spec</a></li><li><a href="src_cpu_counter.adb.html#l1" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l4"><pre> </pre></li>
+<li id="l5"><pre><span class="keyword">procedure</span> <span class="droplink">Concurrent_Mergesort<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:9:11" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l9" title="To spec">To spec</a></li></ul></span> (<span class="droplink">Sort_Field<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:9:33" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l9" title="To spec">To spec</a></li></ul></span> : <span class="keyword">in</span> <span class="keyword">out</span> <span class="droplink">Element_Array<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:5:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l5" title="To spec">To spec</a></li></ul></span>) <span class="keyword">is</span> </pre></li>
+<li id="l6"><pre> </pre></li>
+<li id="l7"><pre>   <span class="keyword">procedure</span> Mergesort (F : <span class="keyword">in</span> <span class="keyword">out</span> <span class="droplink">Element_Array<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:5:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l5" title="To spec">To spec</a></li></ul></span>) <span class="keyword">is</span> </pre></li>
+<li id="l8"><pre> </pre></li>
+<li id="l9"><pre>   <span class="keyword">begin</span> </pre></li>
+<li id="l10"><pre>      <span class="keyword">if</span> <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a>&apos;Length &gt; 1 <span class="keyword">then</span> </pre></li>
+<li id="l11"><pre>         <span class="keyword">declare</span> </pre></li>
+<li id="l12"><pre>            Middle : <span class="keyword">constant</span> <span class="droplink">Index<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l4" title="To spec">To spec</a></li></ul></span> := <span class="droplink">Index<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l4" title="To spec">To spec</a></li></ul></span>&apos;Val (<span class="droplink">Index<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l4" title="To spec">To spec</a></li></ul></span>&apos;Pos (<a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a>&apos;First) + <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a>&apos;Length / 2); </pre></li>
+<li id="l13"><pre> </pre></li>
+<li id="l14"><pre>            <span class="keyword">subtype</span> Low_Range  <span class="keyword">is</span> <span class="droplink">Index<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l4" title="To spec">To spec</a></li></ul></span> <span class="keyword">range</span> <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a>&apos;First .. <span class="droplink">Index<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l4" title="To spec">To spec</a></li></ul></span>&apos;Pred (Middle); </pre></li>
+<li id="l15"><pre>            <span class="keyword">subtype</span> High_Range <span class="keyword">is</span> <span class="droplink">Index<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l4" title="To spec">To spec</a></li></ul></span> <span class="keyword">range</span> Middle  .. <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a>&apos;Last; </pre></li>
+<li id="l16"><pre> </pre></li>
+<li id="l17"><pre>            F_Low  : <span class="keyword">aliased</span> <span class="droplink">Element_Array<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:5:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l5" title="To spec">To spec</a></li></ul></span> := <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a> (Low_Range); </pre></li>
+<li id="l18"><pre>            F_High : <span class="keyword">aliased</span> <span class="droplink">Element_Array<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:5:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l5" title="To spec">To spec</a></li></ul></span> := <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a> (High_Range); </pre></li>
+<li id="l19"><pre> </pre></li>
+<li id="l20"><pre>            Gained_Agent : Boolean := False; </pre></li>
+<li id="l21"><pre> </pre></li>
+<li id="l22"><pre>         <span class="keyword">begin</span> </pre></li>
+<li id="l23"><pre>            <span class="keyword">if</span> <span class="droplink">CPUs_Potentially_Available<ul><li><a href="cpu_counter.ads.html#cpu_counter.ads:5:4" title="To API doc">To API doc</a></li><li><a href="src_cpu_counter.ads.html#l5" title="To spec">To spec</a></li></ul></span> <span class="keyword">then</span> </pre></li>
+<li id="l24"><pre>               <span class="droplink">CPU_Count.Try_Check_One_Out<ul><li><a href="cpu_counter.ads.html#cpu_counter.ads:8:17" title="To API doc">To API doc</a></li><li><a href="src_cpu_counter.ads.html#l8" title="To spec">To spec</a></li><li><a href="src_cpu_counter.adb.html#l5" title="To body">To body</a></li></ul></span> (Gained_Agent); </pre></li>
+<li id="l25"><pre>            <span class="keyword">end</span> <span class="keyword">if</span>; </pre></li>
+<li id="l26"><pre> </pre></li>
+<li id="l27"><pre>            <span class="keyword">if</span> Gained_Agent <span class="keyword">then</span> </pre></li>
+<li id="l28"><pre> </pre></li>
+<li id="l29"><pre>               <span class="keyword">null</span>; <span class="comment">--&gt; Replace this with concurrent operations</span> </pre></li>
+<li id="l30"><pre> </pre></li>
+<li id="l31"><pre>            <span class="keyword">else</span> </pre></li>
+<li id="l32"><pre>               <span class="droplink">Mergesort<ul><li><a href="src_concurrent_mergesort.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_concurrent_mergesort.adb.html#l7" title="To body">To body</a></li></ul></span> (F_Low); </pre></li>
+<li id="l33"><pre>               <span class="droplink">Mergesort<ul><li><a href="src_concurrent_mergesort.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_concurrent_mergesort.adb.html#l7" title="To body">To body</a></li></ul></span> (F_High); </pre></li>
+<li id="l34"><pre>            <span class="keyword">end</span> <span class="keyword">if</span>; </pre></li>
+<li id="l35"><pre> </pre></li>
+<li id="l36"><pre>            <span class="keyword">declare</span> </pre></li>
+<li id="l37"><pre>               Low          : Low_Range  := Low_Range&apos;First; </pre></li>
+<li id="l38"><pre>               High         : High_Range := High_Range&apos;First; </pre></li>
+<li id="l39"><pre>               Low_Element  : <span class="droplink">Element<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:3:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l3" title="To spec">To spec</a></li></ul></span>    := F_Low  (Low); </pre></li>
+<li id="l40"><pre>               High_Element : <span class="droplink">Element<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:3:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l3" title="To spec">To spec</a></li></ul></span>    := F_High (High); </pre></li>
+<li id="l41"><pre> </pre></li>
+<li id="l42"><pre>            <span class="keyword">begin</span> </pre></li>
+<li id="l43"><pre>               Merge : <span class="keyword">for</span> i <span class="keyword">in</span> <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a>&apos;Range <span class="keyword">loop</span> </pre></li>
+<li id="l44"><pre> </pre></li>
+<li id="l45"><pre>                  <span class="keyword">if</span> Low_Element &lt; High_Element <span class="keyword">then</span> </pre></li>
+<li id="l46"><pre>                     <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a> (i) := Low_Element; </pre></li>
+<li id="l47"><pre>                     <span class="keyword">if</span> Low = F_Low&apos;Last <span class="keyword">then</span> </pre></li>
+<li id="l48"><pre>                        <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a> (<span class="droplink">Index<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l4" title="To spec">To spec</a></li></ul></span>&apos;Succ (i) .. <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a>&apos;Last) := F_High (High .. F_High&apos;Last); </pre></li>
+<li id="l49"><pre>                        <span class="keyword">exit</span> Merge; </pre></li>
+<li id="l50"><pre>                     <span class="keyword">else</span> </pre></li>
+<li id="l51"><pre>                        Low  := <span class="droplink">Index<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l4" title="To spec">To spec</a></li></ul></span>&apos;Succ (Low); Low_Element  := F_Low (Low); </pre></li>
+<li id="l52"><pre>                     <span class="keyword">end</span> <span class="keyword">if</span>; </pre></li>
+<li id="l53"><pre>                  <span class="keyword">else</span> </pre></li>
+<li id="l54"><pre>                     <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a> (i) := High_Element; </pre></li>
+<li id="l55"><pre>                     <span class="keyword">if</span> High = F_High&apos;Last <span class="keyword">then</span> </pre></li>
+<li id="l56"><pre>                        <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a> (<span class="droplink">Index<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l4" title="To spec">To spec</a></li></ul></span>&apos;Succ (i) .. <a href="src_concurrent_mergesort.adb.html#l7" title="defined at concurrent_mergesort.adb:7:25">F</a>&apos;Last) := F_Low (Low .. F_Low&apos;Last); </pre></li>
+<li id="l57"><pre>                        <span class="keyword">exit</span> Merge; </pre></li>
+<li id="l58"><pre>                     <span class="keyword">else</span> </pre></li>
+<li id="l59"><pre>                        High := <span class="droplink">Index<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l4" title="To spec">To spec</a></li></ul></span>&apos;Succ (High); High_Element := F_High (High); </pre></li>
+<li id="l60"><pre>                     <span class="keyword">end</span> <span class="keyword">if</span>; </pre></li>
+<li id="l61"><pre>                  <span class="keyword">end</span> <span class="keyword">if</span>; </pre></li>
+<li id="l62"><pre>               <span class="keyword">end</span> <span class="keyword">loop</span> Merge; </pre></li>
+<li id="l63"><pre>            <span class="keyword">end</span>; </pre></li>
+<li id="l64"><pre>         <span class="keyword">end</span>; </pre></li>
+<li id="l65"><pre>      <span class="keyword">end</span> <span class="keyword">if</span>; </pre></li>
+<li id="l66"><pre>   <span class="keyword">end</span> <span class="droplink">Mergesort<ul><li><a href="src_concurrent_mergesort.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_concurrent_mergesort.adb.html#l7" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l67"><pre> </pre></li>
+<li id="l68"><pre><span class="keyword">begin</span> </pre></li>
+<li id="l69"><pre>   <span class="droplink">Mergesort<ul><li><a href="src_concurrent_mergesort.adb.html#l7" title="To spec">To spec</a></li><li><a href="src_concurrent_mergesort.adb.html#l7" title="To body">To body</a></li></ul></span> (<span class="droplink">Sort_Field<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:9:33" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l9" title="To spec">To spec</a></li></ul></span>); </pre></li>
+<li id="l70"><pre><span class="keyword">end</span> <span class="droplink">Concurrent_Mergesort<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:9:11" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l9" title="To spec">To spec</a></li><li><a href="src_concurrent_mergesort.adb.html#l5" title="To body">To body</a></li></ul></span>; </pre></li>
+</ol></div>
+</div>
+
+</body>
+</html>

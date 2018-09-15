@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__means.o
+[PROJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Hello_Concurrent_World\hello_concurrent_world.gpr
+20170722024136
+[BOUND OBJECT FILES]
+C:\Users\ljsPC\Desktop\COMP2310\Hello_Concurrent_World\Objects\means.o
+[GENERATED SOURCE FILES]
+b__means.ads
+b__means.adb
+b__means.ali
+[RESULTING OPTIONS]
+-LC:\Users\ljsPC\Desktop\COMP2310\Hello_Concurrent_World\Objects\
+-LC:\Users\ljsPC\Desktop\COMP2310\Hello_Concurrent_World\Objects\
+-LE:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnarl.a
+E:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

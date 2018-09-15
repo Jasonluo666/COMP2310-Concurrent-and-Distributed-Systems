@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+
+  <title>
+    File: concurrent_mergesort.ads
+  </title>
+  <link rel='stylesheet' href='support/docgen.css' type='text/css'/>
+  <link rel='stylesheet' href='support/tags.css' type='text/css'/>
+  <script src='support/docgen.js' type='text/javascript' charset='utf-8'></script>
+</head>
+<body onload="onloadDoc();">
+
+<div id='leftSide'>
+  <div id='leftSideInside'>
+  <div id='header'>
+    <h2 class="button">Documentation</h2>
+    <a href='toc.html'><div class="button2">Table of Contents</div></a>
+
+    <a href='tree.html'><div class="button2">Class Inheritance Tree</div></a>
+
+  </div>
+
+  <div id='navigation'>
+    <h2 class="button">Navigation</h2>
+    <a href='#Description'><div class="button2">Description</div></a>
+    <a href='#Methods'><div class="button2">Subprograms &amp; Entries</div></a>
+  </div><!-- navigation -->
+  </div>
+</div> <!-- leftSide -->
+
+<div class='default' id='rightSide'>
+ <div id='rightSideInside'>
+ <div id='Index'>
+  <h2>Index</h2>
+  <script type="text/javascript">
+    var names = new Array (
+new Array ('Concurrent_<wbr/>Mergesort (generic)', 'concurrent_mergesort.ads:9:11', 'subp-spec'),
+      new Array ('dummy', '', ''));
+    printIndexList (names);
+  </script>
+  <noscript>
+    <ul>
+      <li class='subp-spec'><a href="#concurrent_mergesort.ads:9:11">Concurrent_<wbr/>Mergesort (generic)</a></li>
+    </ul>
+  </noscript>
+ </div>
+ </div>
+</div>
+
+<div class='default' id='documentation'>
+  <div class='title'>
+    File:
+<span class="droplink"><i>concurrent_mergesort.ads</i><ul>
+  <li><a href="src_concurrent_mergesort.ads.html">Goto spec source</a></li>
+</ul></span>
+  </div>
+  <div class='subprograms'>
+    <h1><a name='Description' id='Description'></a>Description</h1>
+    <div class="class">
+    </div>
+  </div>
+
+
+
+
+
+
+    <div class='subprograms'>
+      <h1><a name='Methods' id='Methods'></a>Subprograms &amp; Entries</h1>
+      <div class="class">
+        <h3>
+          <a name='concurrent_mergesort.ads:9:11' id='concurrent_mergesort.ads:9:11'></a>
+<span class="droplink">Concurrent_Mergesort (generic)<ul>
+  <li><a href="src_concurrent_mergesort.ads.html#l9">Goto spec in source</a></li>
+  <li><a href="src_concurrent_mergesort.adb.html#l5">Goto body in source</a></li>
+</ul></span>
+        </h3>
+        <div class='details'><pre><span class="keyword">generic</span>  <span class="keyword">type</span> <span class="name"><a name="concurrent_mergesort.ads:3:9"></a>Element</span>       <span class="keyword">is</span> <span class="keyword">private</span>;</td></tr><tr><td></td><td><span class="keyword">type</span> <span class="name"><a name="concurrent_mergesort.ads:4:9"></a>Index</span>         <span class="keyword">is</span> <table><tr><td>(</td><td><>);</td></tr><tr><td></td><td><span class="keyword">type</span> <span class="name"><a name="concurrent_mergesort.ads:5:9"></a>Element_Array</span> <span class="keyword">is</span> <span class="keyword">array</span> (<a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:4:9" title="defined at concurrent_mergesort.ads:4:9">Index</a> <span class="keyword">range</span> <>) <span class="keyword">of</span> <a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:3:9" title="defined at concurrent_mergesort.ads:3:9">Element</a>;</td></tr><tr><td></td><td><span class="keyword">with</span> <span class="keyword">function</span> "<" (<span class="name"><a name="concurrent_mergesort.ads:7:23"></a>Left</span>, <span class="name"><a name="concurrent_mergesort.ads:7:29"></a>Right</span></td><td>: <a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:3:9" title="defined at concurrent_mergesort.ads:3:9">Element</a>) <span class="keyword">return</span> Boolean <span class="keyword">is</span> <>;</td></tr><tr><td></td><td><span class="keyword">procedure</span> <span class="name_emphasis">Concurrent_Mergesort</span> (<span class="name"><a name="concurrent_mergesort.ads:9:33"></a>Sort_Field</span></td><td>: <span class="keyword">in</span> <span class="keyword">out</span> <a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:5:9" title="defined at concurrent_mergesort.ads:5:9">Element_Array</a>);</td></tr></table></pre></div>
+        <div class='profile'>
+          <h4>References:</h4>
+            <div><i><a href="src_concurrent_mergesort.ads.html#l9" title="concurrent_mergesort.ads:9:11">concurrent_mergesort.ads:9:11</a> (declaration)</i></div>
+            <div><i><a href="src_concurrent_mergesort.adb.html#l5" title="concurrent_mergesort.adb:5:11">concurrent_mergesort.adb:5:11</a> (body)</i></div>
+            <div><i><a href="src_concurrent_mergesort.adb.html#l70" title="concurrent_mergesort.adb:70:5">concurrent_mergesort.adb:70:5</a> (label)</i></div>
+            <div><i><a href="src_test_concurrent_mergesort.adb.html#l5" title="test_concurrent_mergesort.adb:5:6">test_concurrent_mergesort.adb:5:6</a> (with line)</i></div>
+            <div><i><a href="src_test_concurrent_mergesort.adb.html#l21" title="test_concurrent_mergesort.adb:21:43">test_concurrent_mergesort.adb:21:43</a> (reference)</i></div>
+        </div>
+        <div class='profile'>
+          <h4>Called by:</h4>
+            <div><i><a href="test_concurrent_mergesort.adb.html#test_concurrent_mergesort.adb:8:11" title="defined at test_concurrent_mergesort.adb:8:11">Test_Concurrent_Mergesort</a> defined at <a href="src_test_concurrent_mergesort.adb.html#l8" title="test_concurrent_mergesort.adb:8:11">test_concurrent_mergesort.adb:8:11</a></i></div>
+        </div>
+        <div class='profile'>
+          <h4>Calls:</h4>
+            <div><i><a href="concurrent_mergesort.adb.html#concurrent_mergesort.adb:7:14" title="defined at concurrent_mergesort.adb:7:14">Concurrent_Mergesort.Mergesort</a> defined at <a href="src_concurrent_mergesort.adb.html#l7" title="concurrent_mergesort.adb:7:14">concurrent_mergesort.adb:7:14</a></i></div>
+            <div><i><a href="test_concurrent_mergesort.adb.html#test_concurrent_mergesort.adb:21:14" title="defined at test_concurrent_mergesort.adb:21:14">Test_Concurrent_Mergesort.Merge_Sort_Concurrent</a> defined at <a href="src_test_concurrent_mergesort.adb.html#l21" title="test_concurrent_mergesort.adb:21:14">test_concurrent_mergesort.adb:21:14</a></i></div>
+        </div>
+      </div>
+    </div>
+</div> <!-- documentation -->
+
+</body>
+</html>

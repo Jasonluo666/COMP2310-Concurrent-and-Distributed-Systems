@@ -1,0 +1,2 @@
+reduce_concurrent.ads:16:04: proper body not allowed in package spec
+reduce_concurrent.ads:24:01: (style) blank line not allowed at end of file

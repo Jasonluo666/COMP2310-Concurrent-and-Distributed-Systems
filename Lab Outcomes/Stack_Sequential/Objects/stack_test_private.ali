@@ -1,0 +1,167 @@
+V "GNAT Lib v2017"
+M P W=b
+A -gnatA
+A -g
+A -gnatVa
+A -gnatVr
+A -gnatVp
+A -gnatVm
+A -gnatVi
+A -gnatVf
+A -gnatVe
+A -gnatVd
+A -gnatVc
+A -gnatVO
+A -gnatw.a
+A -gnatw.b
+A -gnatwc
+A -gnatw.c
+A -gnatwd
+A -gnatwf
+A -gnatwg
+A -gnatwh
+A -gnatw.h
+A -gnatwi
+A -gnatw.i
+A -gnatwj
+A -gnatwk
+A -gnatw.k
+A -gnatwl
+A -gnatw.l
+A -gnatwm
+A -gnatw.m
+A -gnatw.n
+A -gnatwo
+A -gnatw.o
+A -gnatwp
+A -gnatw.p
+A -gnatwq
+A -gnatwr
+A -gnatw.r
+A -gnatw.s
+A -gnatwt
+A -gnatw.t
+A -gnatwu
+A -gnatw.u
+A -gnatwv
+A -gnatw.v
+A -gnatww
+A -gnatw.w
+A -gnatwx
+A -gnatw.x
+A -gnatwy
+A -gnatwz
+A -gnat12
+A -gnatya
+A -gnatyA
+A -gnatyb
+A -gnatyB
+A -gnatyc
+A -gnatyC
+A -gnatye
+A -gnatyh
+A -gnatyf
+A -gnatyi
+A -gnatyk
+A -gnatyl
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnato
+A -fstack-check=specific
+A -gnatE
+A -gnata
+A -g
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U stack_test_private%b	stack_test_private.adb	d6e0a94a DE NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W stack_pack_generic%s	stack_pack_generic.adb	stack_pack_generic.ali
+W system%s		system.ads		system.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20170516105950 76789da1 ada%s
+D a-except.ads		20170516105952 291912d5 ada.exceptions%s
+D a-ioexce.ads		20170516105948 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105954 d3a89129 ada.tags%s
+D a-textio.ads		20170516105954 386df5d4 ada.text_io%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-cstrea.ads		20170516105950 e53d8b8e interfaces.c_streams%s
+D stack_pack_generic.ads  20170801123404 4a0db07e stack_pack_generic%s
+D stack_pack_generic.adb  20170801121610 c6f3a51d stack_pack_generic%b
+D stack_test_private.adb  20170801123240 a480ece0 stack_test_private%b
+D system.ads		20170516105954 32a08138 system%s
+D s-conca2.ads		20170516105952 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20170516105954 0b705ca5 system.concat_3%s
+D s-crtl.ads		20170516105948 0ebbdb71 system.crtl%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-ficobl.ads		20170516105956 078245e4 system.file_control_block%s
+D s-imgint.ads		20170516105950 02dbe0c2 system.img_int%s
+D s-parame.ads		20170516105954 7e2a0d7f system.parameters%s
+D s-soflin.ads		20170516105950 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105954 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105954 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105952 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20170516105954 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 12|6r6 6r30
+X 6 a-textio.ads
+49K13*Text_IO 471e16 12|6w10 6r34
+242U14*Put 12|52s28 53s28
+263U14*Put_Line 12|20s4 22s4 24s4 26s4 28s4 30s4 33s4 35s4 37s4 39s4 41s4
+. 43s4 46s4 48s4 49s4
+X 10 stack_pack_generic.ads
+5+9 Element 12|10r58
+6M9 Stack_Size 12|10r78
+7k9*Stack_Pack_Generic 26e23 12|5w6 10r38
+9R9 Stack_Type 12|14r19[10]
+11U14 Push 12|19s4[10] 21s4[10] 23s4[10] 25s4[10] 27s4[10] 29s4[10] 45s4[10]
+11i20 Item{integer} 12|19r10[10] 21r10[10] 23r10[10] 25r10[10] 27r10[10]
+. 29r10[10]
+11r40 Stack{9R9[12|10]} 12|19r25[10] 21r25[10] 23r25[10] 25r25[10] 27r25[10]
+. 29r25[10]
+12U14 Pop 12|32s4[10] 34s4[10] 36s4[10] 38s4[10] 40s4[10] 42s4[10]
+14V13 Is_Empty{boolean} 12|48s34[10] 49s34[10]
+17X4 Stack_overflow 12|53r9[10]
+17X20 Stack_underflow 12|52r9[10]
+X 12 stack_test_private.adb
+8U11*Stack_Test_Private 8b11 54l5 54t23
+9M9 Size 10r92
+10K12 Stack_Pack_Integer[10|7] 11r8
+13r4 Stack_1{10|9R9[10]} 19m34 19r34 21m34 21r34 23m34 23r34 25m34 25r34
+. 27m34 27r34 29m34 29r34 32m23 32r23 34m23 34r23 36m23 36r23 38m23 38r23
+. 40m23 40r23 42m23 42r23 48r44
+14r4 Stack_2{10|9R9[10]} 45m24 45r24 49r44
+15i4 Current_Item{integer} 32m9 33r48 34m9 35r48 36m9 37r48 38m9 39r48 40m9
+. 41r48 42m9 43r48 45r10 46r40
+

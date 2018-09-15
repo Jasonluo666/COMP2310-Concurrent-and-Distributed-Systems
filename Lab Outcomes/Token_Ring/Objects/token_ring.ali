@@ -1,0 +1,242 @@
+V "GNAT Lib v2017"
+M P W=b
+A -gnatA
+A -g
+A -gnatVa
+A -gnatVr
+A -gnatVp
+A -gnatVm
+A -gnatVi
+A -gnatVf
+A -gnatVe
+A -gnatVd
+A -gnatVc
+A -gnatVO
+A -gnatw.a
+A -gnatw.b
+A -gnatwc
+A -gnatw.c
+A -gnatwd
+A -gnatwf
+A -gnatwg
+A -gnatwh
+A -gnatw.h
+A -gnatwi
+A -gnatw.i
+A -gnatwj
+A -gnatwk
+A -gnatw.k
+A -gnatwl
+A -gnatw.l
+A -gnatwm
+A -gnatw.m
+A -gnatw.n
+A -gnatwo
+A -gnatw.o
+A -gnatwp
+A -gnatw.p
+A -gnatwq
+A -gnatwr
+A -gnatw.r
+A -gnatw.s
+A -gnatwt
+A -gnatw.t
+A -gnatwu
+A -gnatw.u
+A -gnatwv
+A -gnatw.v
+A -gnatww
+A -gnatw.w
+A -gnatwx
+A -gnatw.x
+A -gnatwy
+A -gnatwz
+A -gnat12
+A -gnatya
+A -gnatyA
+A -gnatyb
+A -gnatyB
+A -gnatyc
+A -gnatyC
+A -gnatye
+A -gnatyh
+A -gnatyf
+A -gnatyi
+A -gnatyk
+A -gnatyl
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnato
+A -fstack-check=specific
+A -gnatE
+A -gnata
+A -g
+A -mtune=generic
+A -march=pentium4
+P SS ZX
+
+RN
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_RELATIVE_DELAY
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+RV MAX_TASK_ENTRIES=2
+RV MAX_TASKS=1+
+
+U token_ring%b		token_ring.adb		1adc11ac DE NE OO SU IS
+W ada%s			ada.ads			ada.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+W system.concat_4%s	s-conca4.adb		s-conca4.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.img_uns%s	s-imguns.adb		s-imguns.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+W system.scalar_values%s  s-scaval.adb		s-scaval.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20170516105950 76789da1 ada%s
+D a-calend.ads		20170516105954 2d5f01d4 ada.calendar%s
+D a-caldel.ads		20170516105948 9f20b83d ada.calendar.delays%s
+D a-except.ads		20170516105952 291912d5 ada.exceptions%s
+D a-finali.ads		20170516105954 bf4f806b ada.finalization%s
+D a-ioexce.ads		20170516105948 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20170516105950 bb51c45a ada.numerics%s
+D a-nudira.ads		20170516105950 71e55def ada.numerics.discrete_random%s
+D a-nudira.adb		20170516105950 72908cdb ada.numerics.discrete_random%b
+D a-reatim.ads		20170516105950 a87e2da7 ada.real_time%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105954 d3a89129 ada.tags%s
+D a-textio.ads		20170516105954 386df5d4 ada.text_io%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-c.ads		20170516105948 5421119b interfaces.c%s
+D i-cstrin.ads		20170516105952 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20170516105950 e53d8b8e interfaces.c_streams%s
+D system.ads		20170516105954 32a08138 system%s
+D s-atacco.ads		20170516105954 4c36d12f system.address_to_access_conversions%s
+D s-conca4.ads		20170516105954 7e642b20 system.concat_4%s
+D s-crtl.ads		20170516105948 0ebbdb71 system.crtl%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-fatflt.ads		20170516105952 11beb392 system.fat_flt%s
+D s-fatgen.ads		20170516105956 49cbaf86 system.fat_gen%s
+D s-fatlfl.ads		20170516105952 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20170516105948 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20170516105954 e2f873d3 system.fat_sflt%s
+D s-ficobl.ads		20170516105956 078245e4 system.file_control_block%s
+D s-finroo.ads		20170516105954 4ff27390 system.finalization_root%s
+D s-imgint.ads		20170516105950 02dbe0c2 system.img_int%s
+D s-imguns.ads		20170516105952 9ff43cf7 system.img_uns%s
+D s-multip.ads		20170516105948 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20170516105954 2e5b26a9 system.os_interface%s
+D s-parame.ads		20170516105954 7e2a0d7f system.parameters%s
+D s-rannum.ads		20170516105952 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20170516105954 20ba1217 system.random_numbers%b
+D s-ransee.ads		20170516105954 01a57b33 system.random_seed%s
+D s-scaval.ads		20170516105948 bea40757 system.scalar_values%s
+D s-secsta.ads		20170516105954 9751b57e system.secondary_stack%s
+D s-soflin.ads		20170516105950 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105954 a37c21ec system.stack_checking%s
+D s-stausa.ads		20170516105954 017a0a05 system.stack_usage%s
+D s-stalib.ads		20170516105954 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20170516105952 601f6b72 system.task_info%s
+D s-taspri.ads		20170516105952 6c1d93d4 system.task_primitives%s
+D s-taprop.ads		20170516105950 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20170516105956 05d6152c system.tasking%s
+D s-taprob.ads		20170516105950 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20170516105956 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20170516105950 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20170516105952 5a53a7c6 system.tasking.stages%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105952 34867c83 system.unsigned_types%s
+D s-valuns.ads		20170516105954 10a8ed3b system.val_uns%s
+D s-wchcon.ads		20170516105954 1b7d22d2 system.wch_con%s
+D s-win32.ads		20170516105948 b7f96285 system.win32%s
+D token_ring.adb	20170831040120 5354b997 token_ring%b
+X 1 ada.ads
+16K9*Ada 20e8 59|1r6 1r40 2r6 2r40
+X 7 a-numeri.ads
+16K13*Numerics 32e17 59|1r10 1r44
+X 8 a-nudira.ads
+44k22*Discrete_Random 75e33 59|1w19 14r35
+50R9 Generator<36|63R9> 59|29r24[14]
+52V13 Random{59|9I9} 59|78s12[14]
+55U14 Reset<36|100p14> 59|76s4[14]
+X 9 a-nudira.adb
+53V16 Random[36|83]{59|9I9} 37|392b13[59|14]
+X 13 a-textio.ads
+49K13*Text_IO 471e16 59|2w10 2r44
+263U14*Put_Line 59|61s10 67s10
+X 15 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 36 s-rannum.ads
+75V13*Random{15|74M9} 37|221i21
+76V13*Random{15|77M9} 37|221i21
+X 43 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 59 token_ring.adb
+4U11*Token_Ring 4b11 86l5 86t15
+6i4 No_of_Nodes{positive} 11r52 17r22
+7i4 Elements_per_Node{positive} 11r32 31r94 32r94
+9I9 Element<long_integer> 14r52 26r36 26r58 27r19 27r47 45r31 45r42 58r26
+. 61r81 65r24 67r78
+11i4 Size{positive} 12r41
+12I12 Index{positive} 26r26 31r49 31r59 32r49 32r59 47r31
+14K12 Random_Elements[8|44] 15r8
+17M9 Nodes 20r40 24r18 31r35 32r35 36r12 36r21 39r41 44r31 61r29 67r29 69r19
+. 81r13
+19T14 Node 22l8 22e12 24r28 34b14 73l8 73t12
+20Y13 Handover_Id 20>26 39b14 41l11 41t22 82s16
+20m26 Assigned_Id{17M9} 40r16
+21Y13 Token 50b17 52s22 63b17 70s25 85s22
+24a4 Ring(19T14) 52r10 70r13 82r7 85r4 85r10
+26a4 Random_Field(9I9) 57r19 77m13 77r13
+27i4 Global_Max{9I9} 65m10 65r37 67r93
+29r4 Element_Generator{8|50R9[14]} 76r11 78r20
+31V13 Partition_First{12I12} 31>30 47s43
+31m30 Id{17M9} 31r83
+32V13 Partition_Last{12I12} 32>30 47s67
+32m30 Id{17M9} 32r83
+36m7 Id{17M9} 40m10 44r42 47r60 47r83 53r13 61r42 67r42 69r13
+39m27 Assigned_Id{17M9}
+44m10 Next{17M9} 52r16 70r19
+45i10 Local_Max{9I9} 58m13 58r39 61r96 65r49
+47I18 Partition{12I12} 57r33
+57i14 e=57:14{9I9} 58r50
+77i8 e=77:13{9I9} 78r7
+81m8 n{17M9} 82r13 82r29
+

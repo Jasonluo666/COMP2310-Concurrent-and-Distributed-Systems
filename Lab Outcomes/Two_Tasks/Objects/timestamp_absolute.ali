@@ -1,0 +1,158 @@
+V "GNAT Lib v2017"
+M P W=b
+A -gnatA
+A -g
+A -gnatVa
+A -gnatVr
+A -gnatVp
+A -gnatVm
+A -gnatVi
+A -gnatVf
+A -gnatVe
+A -gnatVd
+A -gnatVc
+A -gnatVO
+A -gnatw.a
+A -gnatw.b
+A -gnatwc
+A -gnatw.c
+A -gnatwd
+A -gnatwf
+A -gnatwg
+A -gnatwh
+A -gnatw.h
+A -gnatwi
+A -gnatw.i
+A -gnatwj
+A -gnatwk
+A -gnatw.k
+A -gnatwl
+A -gnatw.l
+A -gnatwm
+A -gnatw.m
+A -gnatw.n
+A -gnatwo
+A -gnatw.o
+A -gnatwp
+A -gnatw.p
+A -gnatwq
+A -gnatwr
+A -gnatw.r
+A -gnatw.s
+A -gnatwt
+A -gnatw.t
+A -gnatwu
+A -gnatw.u
+A -gnatwv
+A -gnatw.v
+A -gnatww
+A -gnatw.w
+A -gnatwx
+A -gnatw.x
+A -gnatwy
+A -gnatwz
+A -gnat12
+A -gnatya
+A -gnatyA
+A -gnatyb
+A -gnatyB
+A -gnatyc
+A -gnatyC
+A -gnatye
+A -gnatyh
+A -gnatyf
+A -gnatyi
+A -gnatyk
+A -gnatyl
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnato
+A -fstack-check=specific
+A -gnatE
+A -gnata
+A -g
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U timestamp_absolute%b	timestamp_absolute.adb	77ae4831 DE NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.img_lld%s	s-imglld.adb		s-imglld.ali
+
+D ada.ads		20170516105950 76789da1 ada%s
+D a-calend.ads		20170516105954 2d5f01d4 ada.calendar%s
+D a-caldel.ads		20170516105948 9f20b83d ada.calendar.delays%s
+D a-except.ads		20170516105952 291912d5 ada.exceptions%s
+D a-ioexce.ads		20170516105948 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20170516105952 119b8fb3 ada.streams%s
+D a-tags.ads		20170516105954 d3a89129 ada.tags%s
+D a-textio.ads		20170516105954 386df5d4 ada.text_io%s
+D a-unccon.ads		20170516105954 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170516105950 5ab55268 interfaces%s
+D i-cstrea.ads		20170516105950 e53d8b8e interfaces.c_streams%s
+D system.ads		20170516105954 32a08138 system%s
+D s-conca2.ads		20170516105952 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20170516105948 0ebbdb71 system.crtl%s
+D s-exctab.ads		20170516105954 54135002 system.exception_table%s
+D s-ficobl.ads		20170516105956 078245e4 system.file_control_block%s
+D s-imgint.ads		20170516105950 02dbe0c2 system.img_int%s
+D s-imglld.ads		20170516105956 f3220969 system.img_lld%s
+D s-parame.ads		20170516105954 7e2a0d7f system.parameters%s
+D s-soflin.ads		20170516105950 14e1eb6c system.soft_links%s
+D s-stache.ads		20170516105954 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170516105954 09bd3940 system.standard_library%s
+D s-stoele.ads		20170516105956 2dc34a04 system.storage_elements%s
+D s-traent.ads		20170516105950 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170516105952 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20170516105954 1b7d22d2 system.wch_con%s
+D timestamp_absolute.adb  20150703041820 629cbc31 timestamp_absolute%b
+X 1 ada.ads
+16K9*Ada 20e8 27|1r6 1r24 2r6 2r24
+X 2 a-calend.ads
+36K13*Calendar 395e17 27|2w10 2r28
+44I9*Time<213I9> 27|9r29 16r25
+50I12*Year_Number{integer} 27|20r15
+51I12*Month_Number{integer} 27|19r15
+52I12*Day_Number{integer} 27|18r15
+56O12*Day_Duration{duration} 27|21r15
+58V13*Clock{44I9} 27|9s37 16s33
+66V13*Year{50I12} 27|20s35
+67V13*Month{51I12} 27|19s35
+68V13*Day{52I12} 27|18s35
+69V13*Seconds{56O12} 27|21s35
+102V14*"+"{44I9} 27|24s36
+105V14*"-"{duration} 27|22s35
+213I9 Time_Rep<long_long_integer>
+X 8 a-textio.ads
+49K13*Text_IO 471e16 27|1w10 1r28
+166U14*New_Line 27|23s10
+242U14*Put 27|18s10 19s10 20s10 21s10 22s10
+X 27 timestamp_absolute.adb
+4U11*Timestamp_Absolute 4b11 27l5 27t23
+6i4 No_of_Iterations{positive} 11r46
+7o4 Delay_Per_Iteration{duration} 24r42
+9i4 Start_Up_Time{2|44I9} 22r37 24r22
+11I12 Repeat_for{positive} 14r13
+14i8 i{11I12} 24r38
+16i10 Now{2|44I9} 18r44 19r44 20r44 21r44 22r31
+

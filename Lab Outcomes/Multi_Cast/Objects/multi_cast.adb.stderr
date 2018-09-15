@@ -1,0 +1,3 @@
+multi_cast.adb:11:04: warning: in instantiation at message_server.adb:31
+multi_cast.adb:11:04: warning: potentially unsynchronized barrier
+multi_cast.adb:11:04: warning: "T188b" should be private component of type

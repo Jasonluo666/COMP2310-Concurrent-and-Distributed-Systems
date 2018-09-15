@@ -1,0 +1,107 @@
+V "GNAT Lib v2017"
+A -gnatA
+A -g
+A -gnatVa
+A -gnatVr
+A -gnatVp
+A -gnatVm
+A -gnatVi
+A -gnatVf
+A -gnatVe
+A -gnatVd
+A -gnatVc
+A -gnatVO
+A -gnatw.a
+A -gnatw.b
+A -gnatwc
+A -gnatw.c
+A -gnatwd
+A -gnatwf
+A -gnatwg
+A -gnatwh
+A -gnatw.h
+A -gnatwi
+A -gnatw.i
+A -gnatwj
+A -gnatwk
+A -gnatw.k
+A -gnatwl
+A -gnatw.l
+A -gnatwm
+A -gnatw.m
+A -gnatw.n
+A -gnatwo
+A -gnatw.o
+A -gnatwp
+A -gnatw.p
+A -gnatwq
+A -gnatwr
+A -gnatw.r
+A -gnatw.s
+A -gnatwt
+A -gnatw.t
+A -gnatwu
+A -gnatw.u
+A -gnatwv
+A -gnatw.v
+A -gnatww
+A -gnatw.w
+A -gnatwx
+A -gnatw.x
+A -gnatwy
+A -gnatwz
+A -gnat12
+A -gnatya
+A -gnatyA
+A -gnatyb
+A -gnatyB
+A -gnatyc
+A -gnatyC
+A -gnatye
+A -gnatyh
+A -gnatyf
+A -gnatyi
+A -gnatyk
+A -gnatyl
+A -gnatyn
+A -gnatyO
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnato
+A -fstack-check=specific
+A -gnatE
+A -gnata
+A -g
+A -mtune=generic
+A -march=pentium4
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U reduce_iterative%b	reduce_iterative.adb	207d41f7 DE NE OO SU GE
+
+U reduce_iterative%s	reduce_iterative.ads	c784d506 BN DE EE NE OO GE
+
+D reduce_iterative.ads	20150823030106 c784d506 reduce_iterative%s
+D reduce_iterative.adb	20150823030628 e7f994f1 reduce_iterative%b
+D system.ads		20170516105954 32a08138 system%s
+X 1 reduce_iterative.ads
+3+9 Element 5r52 7r41 7r57 9r54 2|1r54 3r18
+4E9 Index 5r33 2|6r16
+5A9 Element_Array(3+9)<4E9> 9r32 2|1r32
+7V18 Combine{3+9} 7>27 7>33 2|7s22
+7*27 Left{3+9}
+7*33 Right{3+9}
+9v10*Reduce_Iterative 9>28 2|1b10 10l5 10t21
+9*28 A{5A9} 2|1b28 3r29 3r32 6r13 6r28 6r40
+X 2 reduce_iterative.adb
+3*4 Combination{1|3+9} 7m7 7r34 9r11
+6*8 e{1|3+9} 7r31
+

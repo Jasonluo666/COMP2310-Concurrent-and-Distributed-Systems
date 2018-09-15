@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Queue_Sequential\queue_sequential.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Queue_Sequential\queue_sequential.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Queue_Sequential\Sources\queue_pack_private.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 10" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Queue_Sequential\queue_sequential.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Queue_Sequential\Sources\queue_pack_private.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\Users\ljsPC\Desktop\COMP2310\Lab\Queue_Sequential\queue_sequential.gpr</vfs_project>
+      <vfs_file>C:\Users\ljsPC\Desktop\COMP2310\Lab\Queue_Sequential\Sources\queue_test_private.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >C:\Users\ljsPC\Desktop\COMP2310\Queue_Sequential\queue_sequential.gpr</vfs_file>
+    <file_marker column=" 33" line=" 31">
+      <vfs_project >C:\Users\ljsPC\Desktop\COMP2310\Queue_Sequential\queue_sequential.gpr</vfs_project>
+      <vfs_file >C:\Users\ljsPC\Desktop\COMP2310\Queue_Sequential\Sources\queue_pack_private.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 11">
+      <vfs_project >C:\Users\ljsPC\Desktop\COMP2310\Queue_Sequential\queue_sequential.gpr</vfs_project>
+      <vfs_file >C:\Users\ljsPC\Desktop\COMP2310\Queue_Sequential\Sources\queue_pack_private.ads</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

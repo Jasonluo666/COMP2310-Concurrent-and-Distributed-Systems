@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+
+  <title>
+    File: test_concurrent_mergesort.adb
+  </title>
+  <link rel='stylesheet' href='support/docgen.css' type='text/css'/>
+  <link rel='stylesheet' href='support/tags.css' type='text/css'/>
+  <script src='support/docgen.js' type='text/javascript' charset='utf-8'></script>
+</head>
+<body onload="onloadDoc();">
+
+<div id='leftSide'>
+  <div id='leftSideInside'>
+  <div id='header'>
+    <h2 class="button">Documentation</h2>
+    <a href='toc.html'><div class="button2">Table of Contents</div></a>
+
+    <a href='tree.html'><div class="button2">Class Inheritance Tree</div></a>
+
+  </div>
+  </div>
+</div> <!-- leftSide -->
+
+<div class='subprograms'>
+  <div class='details'><ol><li id="l1"><pre><span class="keyword">with</span> Ada.Numerics.Discrete_Random; </pre></li>
+<li id="l2"><pre><span class="keyword">with</span> Ada.Long_Integer_Text_IO;     <span class="keyword">use</span> Ada.Long_Integer_Text_IO; </pre></li>
+<li id="l3"><pre><span class="keyword">with</span> Ada.Real_Time;                <span class="keyword">use</span> Ada.Real_Time; </pre></li>
+<li id="l4"><pre><span class="keyword">with</span> Ada.Text_IO;                  <span class="keyword">use</span> Ada.Text_IO; </pre></li>
+<li id="l5"><pre><span class="keyword">with</span> <span class="droplink">Concurrent_Mergesort<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:9:11" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l9" title="To spec">To spec</a></li><li><a href="src_concurrent_mergesort.adb.html#l5" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l6"><pre><span class="keyword">with</span> <span class="droplink">Sorting_Tests<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:10:9" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l10" title="To spec">To spec</a></li><li><a href="src_sorting_tests.adb.html#l3" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l7"><pre> </pre></li>
+<li id="l8"><pre><span class="keyword">procedure</span> Test_Concurrent_Mergesort <span class="keyword">is</span> </pre></li>
+<li id="l9"><pre> </pre></li>
+<li id="l10"><pre>   Field_Size : <span class="keyword">constant</span> Positive := 50_000; </pre></li>
+<li id="l11"><pre>   <span class="keyword">subtype</span> Field_Range <span class="keyword">is</span> Positive <span class="keyword">range</span> 1 .. <a href="src_test_concurrent_mergesort.adb.html#l10" title="defined at test_concurrent_mergesort.adb:10:4">Field_Size</a>; </pre></li>
+<li id="l12"><pre> </pre></li>
+<li id="l13"><pre>   <span class="keyword">subtype</span> Element_Type <span class="keyword">is</span> Natural; </pre></li>
+<li id="l14"><pre>   <span class="keyword">type</span> Field_Type <span class="keyword">is</span> <span class="keyword">array</span> (<a href="src_test_concurrent_mergesort.adb.html#l11" title="defined at test_concurrent_mergesort.adb:11:12">Field_Range</a> <span class="keyword">range</span> &lt;&gt;) <span class="keyword">of</span> <a href="src_test_concurrent_mergesort.adb.html#l13" title="defined at test_concurrent_mergesort.adb:13:12">Element_Type</a>; </pre></li>
+<li id="l15"><pre> </pre></li>
+<li id="l16"><pre>   Null_Field : <a href="src_test_concurrent_mergesort.adb.html#l14" title="defined at test_concurrent_mergesort.adb:14:9">Field_Type</a> (0 .. -1); </pre></li>
+<li id="l17"><pre> </pre></li>
+<li id="l18"><pre>   <span class="keyword">package</span> RandomElements <span class="keyword">is</span> <span class="keyword">new</span> Ada.Numerics.Discrete_Random (<a href="src_test_concurrent_mergesort.adb.html#l13" title="defined at test_concurrent_mergesort.adb:13:12">Element_Type</a>); </pre></li>
+<li id="l19"><pre>   <span class="keyword">use</span> <a href="src_test_concurrent_mergesort.adb.html#l18" title="defined at test_concurrent_mergesort.adb:18:12">RandomElements</a>; </pre></li>
+<li id="l20"><pre> </pre></li>
+<li id="l21"><pre>   <span class="keyword">procedure</span> <a href="src_concurrent_mergesort.adb.html#l5" title="defined at test_concurrent_mergesort.adb:21:14">Merge_Sort_Concurrent</a> <span class="keyword">is</span> <span class="keyword">new</span> <span class="droplink">Concurrent_Mergesort<ul><li><a href="concurrent_mergesort.ads.html#concurrent_mergesort.ads:9:11" title="To API doc">To API doc</a></li><li><a href="src_concurrent_mergesort.ads.html#l9" title="To spec">To spec</a></li><li><a href="src_concurrent_mergesort.adb.html#l5" title="To body">To body</a></li></ul></span> (<a href="src_test_concurrent_mergesort.adb.html#l13" title="defined at test_concurrent_mergesort.adb:13:12">Element_Type</a>, <a href="src_test_concurrent_mergesort.adb.html#l11" title="defined at test_concurrent_mergesort.adb:11:12">Field_Range</a>, <a href="src_test_concurrent_mergesort.adb.html#l14" title="defined at test_concurrent_mergesort.adb:14:9">Field_Type</a>); </pre></li>
+<li id="l22"><pre> </pre></li>
+<li id="l23"><pre>   <span class="keyword">package</span> Element_Sorting_Tests <span class="keyword">is</span> <span class="keyword">new</span> <span class="droplink">Sorting_Tests<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:10:9" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l10" title="To spec">To spec</a></li><li><a href="src_sorting_tests.adb.html#l3" title="To body">To body</a></li></ul></span> (<span class="droplink">Element<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:3:9" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l3" title="To spec">To spec</a></li></ul></span>       =&gt; <a href="src_test_concurrent_mergesort.adb.html#l13" title="defined at test_concurrent_mergesort.adb:13:12">Element_Type</a>, </pre></li>
+<li id="l24"><pre>                                                       <span class="droplink">Index<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:4:9" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l4" title="To spec">To spec</a></li></ul></span>         =&gt; <a href="src_test_concurrent_mergesort.adb.html#l11" title="defined at test_concurrent_mergesort.adb:11:12">Field_Range</a>, </pre></li>
+<li id="l25"><pre>                                                       <span class="droplink">Element_Array<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:5:9" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l5" title="To spec">To spec</a></li></ul></span> =&gt; <a href="src_test_concurrent_mergesort.adb.html#l14" title="defined at test_concurrent_mergesort.adb:14:9">Field_Type</a>); </pre></li>
+<li id="l26"><pre>   <span class="keyword">use</span> <a href="src_test_concurrent_mergesort.adb.html#l23" title="defined at test_concurrent_mergesort.adb:23:12">Element_Sorting_Tests</a>; </pre></li>
+<li id="l27"><pre> </pre></li>
+<li id="l28"><pre>   <span class="keyword">procedure</span> Check_Field (Sort_Field     : <a href="src_test_concurrent_mergesort.adb.html#l14" title="defined at test_concurrent_mergesort.adb:14:9">Field_Type</a>; </pre></li>
+<li id="l29"><pre>                          Original_Field : <a href="src_test_concurrent_mergesort.adb.html#l14" title="defined at test_concurrent_mergesort.adb:14:9">Field_Type</a> := <a href="src_test_concurrent_mergesort.adb.html#l16" title="defined at test_concurrent_mergesort.adb:16:4">Null_Field</a>) <span class="keyword">is</span> </pre></li>
+<li id="l30"><pre> </pre></li>
+<li id="l31"><pre>   <span class="keyword">begin</span> </pre></li>
+<li id="l32"><pre>      New_Line; </pre></li>
+<li id="l33"><pre>      Put_Line ((<span class="keyword">if</span> <span class="droplink">Is_Sorted<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:12:13" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l12" title="To spec">To spec</a></li><li><a href="src_sorting_tests.adb.html#l9" title="To body">To body</a></li></ul></span> (<a href="src_test_concurrent_mergesort.adb.html#l28" title="defined at test_concurrent_mergesort.adb:28:27">Sort_Field</a>) </pre></li>
+<li id="l34"><pre>                <span class="keyword">then</span> <span class="string">&quot;----- Field is sorted &quot;</span> </pre></li>
+<li id="l35"><pre>                <span class="keyword">else</span> <span class="string">&quot;----- Field is NOT sorted &quot;</span>) &amp; </pre></li>
+<li id="l36"><pre>                (<span class="keyword">if</span> <a href="src_test_concurrent_mergesort.adb.html#l29" title="defined at test_concurrent_mergesort.adb:29:27">Original_Field</a> = <a href="src_test_concurrent_mergesort.adb.html#l16" title="defined at test_concurrent_mergesort.adb:16:4">Null_Field</a> </pre></li>
+<li id="l37"><pre>                   <span class="keyword">then</span> <span class="string">&quot;-----&quot;</span> </pre></li>
+<li id="l38"><pre>                   <span class="keyword">elsif</span> <span class="droplink">Is_Permutation<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:14:13" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l14" title="To spec">To spec</a></li><li><a href="src_sorting_tests.adb.html#l24" title="To body">To body</a></li></ul></span> (<a href="src_test_concurrent_mergesort.adb.html#l28" title="defined at test_concurrent_mergesort.adb:28:27">Sort_Field</a>, <a href="src_test_concurrent_mergesort.adb.html#l29" title="defined at test_concurrent_mergesort.adb:29:27">Original_Field</a>) </pre></li>
+<li id="l39"><pre>                   <span class="keyword">then</span> <span class="string">&quot;and a permutation of input -----&quot;</span> </pre></li>
+<li id="l40"><pre>                   <span class="keyword">else</span> <span class="string">&quot;and NOT a permutation of input -----&quot;</span>)); </pre></li>
+<li id="l41"><pre>      New_Line; </pre></li>
+<li id="l42"><pre>   <span class="keyword">end</span> <span class="droplink">Check_Field<ul><li><a href="src_test_concurrent_mergesort.adb.html#l28" title="To spec">To spec</a></li><li><a href="src_test_concurrent_mergesort.adb.html#l28" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l43"><pre> </pre></li>
+<li id="l44"><pre>   <span class="keyword">procedure</span> Print_Time_Taken (Taken : Time_Span) <span class="keyword">is</span> </pre></li>
+<li id="l45"><pre> </pre></li>
+<li id="l46"><pre>   <span class="keyword">begin</span> </pre></li>
+<li id="l47"><pre>      Put (<span class="string">&quot;Time taken: &quot;</span>); </pre></li>
+<li id="l48"><pre>      Put (Long_Integer (Long_Float&apos;Floor (Long_Float               (To_Duration (<a href="src_test_concurrent_mergesort.adb.html#l44" title="defined at test_concurrent_mergesort.adb:44:32">Taken</a>)))),          4); Put (<span class="string">&quot; s &quot;</span>); </pre></li>
+<li id="l49"><pre>      Put (Long_Integer (Long_Float&apos;Floor (Long_Float     (1_000.0 * To_Duration (<a href="src_test_concurrent_mergesort.adb.html#l44" title="defined at test_concurrent_mergesort.adb:44:32">Taken</a>)))) <span class="keyword">mod</span> 1000, 4); Put (<span class="string">&quot; ms &quot;</span>); </pre></li>
+<li id="l50"><pre>      Put (Long_Integer (Long_Float&apos;Floor (Long_Float (1_000_000.0 * To_Duration (<a href="src_test_concurrent_mergesort.adb.html#l44" title="defined at test_concurrent_mergesort.adb:44:32">Taken</a>)))) <span class="keyword">mod</span> 1000, 4); Put (<span class="string">&quot; micro-s &quot;</span>); </pre></li>
+<li id="l51"><pre>   <span class="keyword">end</span> <span class="droplink">Print_Time_Taken<ul><li><a href="src_test_concurrent_mergesort.adb.html#l44" title="To spec">To spec</a></li><li><a href="src_test_concurrent_mergesort.adb.html#l44" title="To body">To body</a></li></ul></span>; </pre></li>
+<li id="l52"><pre> </pre></li>
+<li id="l53"><pre>   Random_Field      : <a href="src_test_concurrent_mergesort.adb.html#l14" title="defined at test_concurrent_mergesort.adb:14:9">Field_Type</a> (<a href="src_test_concurrent_mergesort.adb.html#l11" title="defined at test_concurrent_mergesort.adb:11:12">Field_Range</a>); </pre></li>
+<li id="l54"><pre>   Element_Generator : Generator; </pre></li>
+<li id="l55"><pre> </pre></li>
+<li id="l56"><pre><span class="keyword">begin</span> </pre></li>
+<li id="l57"><pre>   Reset (<a href="src_test_concurrent_mergesort.adb.html#l54" title="defined at test_concurrent_mergesort.adb:54:4">Element_Generator</a>); </pre></li>
+<li id="l58"><pre>   <span class="keyword">for</span> ix <span class="keyword">in</span> <a href="src_test_concurrent_mergesort.adb.html#l53" title="defined at test_concurrent_mergesort.adb:53:4">Random_Field</a>&apos;Range <span class="keyword">loop</span> </pre></li>
+<li id="l59"><pre>      <a href="src_test_concurrent_mergesort.adb.html#l53" title="defined at test_concurrent_mergesort.adb:53:4">Random_Field</a> (ix) := Random (<a href="src_test_concurrent_mergesort.adb.html#l54" title="defined at test_concurrent_mergesort.adb:54:4">Element_Generator</a>); </pre></li>
+<li id="l60"><pre>   <span class="keyword">end</span> <span class="keyword">loop</span>; </pre></li>
+<li id="l61"><pre> </pre></li>
+<li id="l62"><pre>   <span class="droplink">Check_Field<ul><li><a href="src_test_concurrent_mergesort.adb.html#l28" title="To spec">To spec</a></li><li><a href="src_test_concurrent_mergesort.adb.html#l28" title="To body">To body</a></li></ul></span> (<a href="src_test_concurrent_mergesort.adb.html#l53" title="defined at test_concurrent_mergesort.adb:53:4">Random_Field</a>); </pre></li>
+<li id="l63"><pre> </pre></li>
+<li id="l64"><pre>   <span class="keyword">declare</span> </pre></li>
+<li id="l65"><pre>      Sort_Field : <a href="src_test_concurrent_mergesort.adb.html#l14" title="defined at test_concurrent_mergesort.adb:14:9">Field_Type</a> := <a href="src_test_concurrent_mergesort.adb.html#l53" title="defined at test_concurrent_mergesort.adb:53:4">Random_Field</a>; </pre></li>
+<li id="l66"><pre>      Sort_Start, </pre></li>
+<li id="l67"><pre>      Sort_End   : Time; </pre></li>
+<li id="l68"><pre> </pre></li>
+<li id="l69"><pre>   <span class="keyword">begin</span> </pre></li>
+<li id="l70"><pre>      Put_Line (<span class="string">&quot;Concurrent mergesort algorithm at work ...&quot;</span>); </pre></li>
+<li id="l71"><pre> </pre></li>
+<li id="l72"><pre>      Sort_Start := Clock; </pre></li>
+<li id="l73"><pre>      <span class="droplink">Merge_Sort_Concurrent<ul><li><a href="src_test_concurrent_mergesort.adb.html#l21" title="To spec">To spec</a></li><li><a href="src_concurrent_mergesort.adb.html#l5" title="To body">To body</a></li></ul></span> (Sort_Field); </pre></li>
+<li id="l74"><pre>      Sort_End  := Clock; </pre></li>
+<li id="l75"><pre> </pre></li>
+<li id="l76"><pre>      <span class="droplink">Print_Time_Taken<ul><li><a href="src_test_concurrent_mergesort.adb.html#l44" title="To spec">To spec</a></li><li><a href="src_test_concurrent_mergesort.adb.html#l44" title="To body">To body</a></li></ul></span> (Sort_End - Sort_Start); Put_Line (<span class="string">&quot; for&quot;</span> &amp; <a href="src_test_concurrent_mergesort.adb.html#l11" title="defined at test_concurrent_mergesort.adb:11:12">Field_Range</a>&apos;Image (<a href="src_test_concurrent_mergesort.adb.html#l10" title="defined at test_concurrent_mergesort.adb:10:4">Field_Size</a>) &amp; <span class="string">&quot; Elements&quot;</span>); </pre></li>
+<li id="l77"><pre> </pre></li>
+<li id="l78"><pre>      <span class="droplink">Check_Field<ul><li><a href="src_test_concurrent_mergesort.adb.html#l28" title="To spec">To spec</a></li><li><a href="src_test_concurrent_mergesort.adb.html#l28" title="To body">To body</a></li></ul></span> (Sort_Field, <a href="src_test_concurrent_mergesort.adb.html#l53" title="defined at test_concurrent_mergesort.adb:53:4">Random_Field</a>); </pre></li>
+<li id="l79"><pre> </pre></li>
+<li id="l80"><pre>      <span class="keyword">if</span> <span class="keyword">not</span> <span class="droplink">Is_Sorted<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:12:13" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l12" title="To spec">To spec</a></li><li><a href="src_sorting_tests.adb.html#l9" title="To body">To body</a></li></ul></span> (Sort_Field) <span class="keyword">or</span> <span class="keyword">else</span> <span class="keyword">not</span> <span class="droplink">Is_Permutation<ul><li><a href="sorting_tests.ads.html#sorting_tests.ads:14:13" title="To API doc">To API doc</a></li><li><a href="src_sorting_tests.ads.html#l14" title="To spec">To spec</a></li><li><a href="src_sorting_tests.adb.html#l24" title="To body">To body</a></li></ul></span> (Sort_Field, <a href="src_test_concurrent_mergesort.adb.html#l53" title="defined at test_concurrent_mergesort.adb:53:4">Random_Field</a>) <span class="keyword">then</span> </pre></li>
+<li id="l81"><pre>         <span class="keyword">raise</span> Program_Error <span class="keyword">with</span> <span class="string">&quot;Tests failed&quot;</span>; </pre></li>
+<li id="l82"><pre>      <span class="keyword">end</span> <span class="keyword">if</span>; </pre></li>
+<li id="l83"><pre>   <span class="keyword">end</span>; </pre></li>
+<li id="l84"><pre><span class="keyword">end</span> <span class="droplink">Test_Concurrent_Mergesort<ul><li><a href="src_test_concurrent_mergesort.adb.html#l8" title="To spec">To spec</a></li><li><a href="src_test_concurrent_mergesort.adb.html#l8" title="To body">To body</a></li></ul></span>; </pre></li>
+</ol></div>
+</div>
+
+</body>
+</html>

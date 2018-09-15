@@ -1,0 +1,3 @@
+concurrent_mergesort.adb:1:09: warning: no entities of "Ada.Exceptions" are referenced
+concurrent_mergesort.adb:2:09: warning: no entities of "Ada.Text_IO" are referenced
+concurrent_mergesort.adb:37:24: warning: declaration hides "Concurrent_Mergesort" at concurrent_mergesort.ads:9

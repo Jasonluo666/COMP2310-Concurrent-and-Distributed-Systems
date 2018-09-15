@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+
+  <title>
+    File: reduce_iterative.ads
+  </title>
+  <link rel='stylesheet' href='support/docgen.css' type='text/css'/>
+  <link rel='stylesheet' href='support/tags.css' type='text/css'/>
+  <script src='support/docgen.js' type='text/javascript' charset='utf-8'></script>
+</head>
+<body onload="onloadDoc();">
+
+<div id='leftSide'>
+  <div id='leftSideInside'>
+  <div id='header'>
+    <h2 class="button">Documentation</h2>
+    <a href='toc.html'><div class="button2">Table of Contents</div></a>
+
+    <a href='tree.html'><div class="button2">Class Inheritance Tree</div></a>
+
+  </div>
+
+  <div id='navigation'>
+    <h2 class="button">Navigation</h2>
+    <a href='#Description'><div class="button2">Description</div></a>
+    <a href='#Methods'><div class="button2">Subprograms &amp; Entries</div></a>
+  </div><!-- navigation -->
+  </div>
+</div> <!-- leftSide -->
+
+<div class='default' id='rightSide'>
+ <div id='rightSideInside'>
+ <div id='Index'>
+  <h2>Index</h2>
+  <script type="text/javascript">
+    var names = new Array (
+new Array ('Reduce_<wbr/>Iterative (generic)', 'reduce_iterative.ads:9:10', 'subp-spec'),
+      new Array ('dummy', '', ''));
+    printIndexList (names);
+  </script>
+  <noscript>
+    <ul>
+      <li class='subp-spec'><a href="#reduce_iterative.ads:9:10">Reduce_<wbr/>Iterative (generic)</a></li>
+    </ul>
+  </noscript>
+ </div>
+ </div>
+</div>
+
+<div class='default' id='documentation'>
+  <div class='title'>
+    File:
+<span class="droplink"><i>reduce_iterative.ads</i><ul>
+  <li><a href="src_reduce_iterative.ads.html">Goto spec source</a></li>
+</ul></span>
+  </div>
+  <div class='subprograms'>
+    <h1><a name='Description' id='Description'></a>Description</h1>
+    <div class="class">
+    </div>
+  </div>
+
+
+
+
+
+
+    <div class='subprograms'>
+      <h1><a name='Methods' id='Methods'></a>Subprograms &amp; Entries</h1>
+      <div class="class">
+        <h3>
+          <a name='reduce_iterative.ads:9:10' id='reduce_iterative.ads:9:10'></a>
+<span class="droplink">Reduce_Iterative (generic)<ul>
+  <li><a href="src_reduce_iterative.ads.html#l9">Goto spec in source</a></li>
+  <li><a href="src_reduce_iterative.adb.html#l1">Goto body in source</a></li>
+</ul></span>
+        </h3>
+        <div class='details'><pre><span class="keyword">generic</span>  <span class="keyword">type</span> <span class="name"><a name="reduce_iterative.ads:3:9"></a>Element</span>       <span class="keyword">is</span> <span class="keyword">private</span>;</td></tr><tr><td></td><td><span class="keyword">type</span> <span class="name"><a name="reduce_iterative.ads:4:9"></a>Index</span>         <span class="keyword">is</span> <table><tr><td>(</td><td><>);</td></tr><tr><td></td><td><span class="keyword">type</span> <span class="name"><a name="reduce_iterative.ads:5:9"></a>Element_Array</span> <span class="keyword">is</span> <span class="keyword">array</span> (<a href="reduce_iterative.ads.html#reduce_iterative.ads:4:9" title="defined at reduce_iterative.ads:4:9">Index</a> <span class="keyword">range</span> <>) <span class="keyword">of</span> <a href="reduce_iterative.ads.html#reduce_iterative.ads:3:9" title="defined at reduce_iterative.ads:3:9">Element</a>;</td></tr><tr><td></td><td><span class="keyword">with</span> <span class="keyword">function</span> <span class="name"><a name="reduce_iterative.ads:7:18"></a>Combine</span> (<span class="name"><a name="reduce_iterative.ads:7:27"></a>Left</span>, <span class="name"><a name="reduce_iterative.ads:7:33"></a>Right</span></td><td>: <a href="reduce_iterative.ads.html#reduce_iterative.ads:3:9" title="defined at reduce_iterative.ads:3:9">Element</a>) <span class="keyword">return</span> <a href="reduce_iterative.ads.html#reduce_iterative.ads:3:9" title="defined at reduce_iterative.ads:3:9">Element</a> <span class="keyword">is</span> <>;</td></tr><tr><td></td><td><span class="keyword">function</span> <span class="name_emphasis">Reduce_Iterative</span> (<span class="name"><a name="reduce_iterative.ads:9:28"></a>A</span></td><td>: <a href="reduce_iterative.ads.html#reduce_iterative.ads:5:9" title="defined at reduce_iterative.ads:5:9">Element_Array</a>) <span class="keyword">return</span> <a href="reduce_iterative.ads.html#reduce_iterative.ads:3:9" title="defined at reduce_iterative.ads:3:9">Element</a>;</td></tr></table></pre></div>
+        <div class='profile'>
+          <h4>References:</h4>
+            <div><i><a href="src_reduce_iterative.ads.html#l9" title="reduce_iterative.ads:9:10">reduce_iterative.ads:9:10</a> (declaration)</i></div>
+            <div><i><a href="src_max.adb.html#l4" title="max.adb:4:6">max.adb:4:6</a> (with line)</i></div>
+            <div><i><a href="src_max.adb.html#l20" title="max.adb:20:35">max.adb:20:35</a> (reference)</i></div>
+            <div><i><a href="src_reduce_iterative.adb.html#l1" title="reduce_iterative.adb:1:10">reduce_iterative.adb:1:10</a> (body)</i></div>
+            <div><i><a href="src_reduce_iterative.adb.html#l10" title="reduce_iterative.adb:10:5">reduce_iterative.adb:10:5</a> (label)</i></div>
+        </div>
+        <div class='profile'>
+          <h4>Called by:</h4>
+            <div><i><a href="max.adb.html#max.adb:7:11" title="defined at max.adb:7:11">Max</a> defined at <a href="src_max.adb.html#l7" title="max.adb:7:11">max.adb:7:11</a></i></div>
+        </div>
+        <div class='profile'>
+          <h4>Calls:</h4>
+            <div><i><a href="reduce_iterative.ads.html#reduce_iterative.ads:7:18" title="defined at reduce_iterative.ads:7:18">Combine</a> defined at <a href="src_reduce_iterative.ads.html#l7" title="reduce_iterative.ads:7:18">reduce_iterative.ads:7:18</a></i></div>
+            <div><i><a href="max.adb.html#max.adb:20:13" title="defined at max.adb:20:13">Max.Max_Iterative</a> defined at <a href="src_max.adb.html#l20" title="max.adb:20:13">max.adb:20:13</a></i></div>
+        </div>
+      </div>
+    </div>
+</div> <!-- documentation -->
+
+</body>
+</html>
